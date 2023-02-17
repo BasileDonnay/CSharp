@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-02-17T14:03:26.696</Modified>
+      <Modified>2023-02-17T14:10:54.485</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-02-17T14:03:26.368</Modified>
+      <Modified>2023-02-17T14:10:54.161</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjetCSharp.runtimeconfig.json">
       <PackagePath>ProjetCSharp.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjetCSharp.dll">
       <PackagePath>ProjetCSharp.dll</PackagePath>
-      <Modified>2023-02-17T14:03:25.571</Modified>
+      <Modified>2023-02-17T14:10:53.416</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ProjetCSharp.exe</PackagePath>
-      <Modified>2023-02-17T14:03:25.571</Modified>
+      <Modified>2023-02-17T14:10:53.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\basil\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.13\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1068,7 +1068,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjetCSharp.deps.json">
       <PackagePath>ProjetCSharp.deps.json</PackagePath>
-      <Modified>2023-02-17T14:03:26.586</Modified>
+      <Modified>2023-02-17T14:10:54.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\basil\.nuget\packages\microsoft.maui.controls.ref.win\6.0.548\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

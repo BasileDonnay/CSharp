@@ -54,9 +54,16 @@
     </ContentPage.MenuBarItems>-->
 
     <Grid
-        RowDefinitions="auto,*,*"
-        ColumnDefinitions="*,*"
+        Padding="10"
+        RowDefinitions="*,*"
+        ColumnDefinitions="auto,*"
         BackgroundColor="Transparent">
+        <Button Text="sqd"
+                Grid.Row="0"
+                Grid.Column="0"
+                HeightRequest="60"
+                WidthRequest="150"
+                HorizontalOptions="Start"/>
         <CollectionView
             Grid.ColumnSpan="1"
             Grid.Row="1"
