@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>2cf4c0a6-51e8-4b9a-8f57-1fa3681679bf</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>
     </WindowsSdkPath>
-    <LayoutDir>C:\Users\basil\git\ProjetCSharp\ProjetCSharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
     <RegisteredManifestChecksum>0C27D6379E12CE42B89EB230D71A13816004EF603C96DFC91579149340F4E627</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>2cf4c0a6-51e8-4b9a-8f57-1fa3681679bf_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>2cf4c0a6-51e8-4b9a-8f57-1fa3681679bf_9zz4h110yvjzm!App</RegisteredUserModeAppID>
@@ -27,28 +27,28 @@
     <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-02-03T15:12:43.839</Modified>
+      <Modified>2023-02-17T14:03:26.696</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-02-03T15:12:43.472</Modified>
+      <Modified>2023-02-17T14:03:26.368</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjetCSharp.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjetCSharp.runtimeconfig.json">
       <PackagePath>ProjetCSharp.runtimeconfig.json</PackagePath>
-      <Modified>2023-02-03T15:12:43.305</Modified>
+      <Modified>2023-02-15T12:44:20.027</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjetCSharp.dll">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjetCSharp.dll">
       <PackagePath>ProjetCSharp.dll</PackagePath>
-      <Modified>2023-02-03T15:12:42.245</Modified>
+      <Modified>2023-02-17T14:03:25.571</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ProjetCSharp.exe</PackagePath>
-      <Modified>2023-02-03T15:12:42.263</Modified>
+      <Modified>2023-02-17T14:03:25.571</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\basil\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.13\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1066,9 +1066,9 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2022-07-19T16:53:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjetCSharp.deps.json">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjetCSharp.deps.json">
       <PackagePath>ProjetCSharp.deps.json</PackagePath>
-      <Modified>2023-02-03T15:12:43.689</Modified>
+      <Modified>2023-02-17T14:03:26.586</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\basil\.nuget\packages\microsoft.maui.controls.ref.win\6.0.548\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -1082,241 +1082,245 @@
       <PackagePath>Microsoft.Maui.pri</PackagePath>
       <Modified>2022-11-17T18:14:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
       <Modified>2023-02-03T14:14:27.672</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
       <Modified>2023-02-03T14:15:57.734</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
       <Modified>2023-02-03T14:15:57.747</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
       <Modified>2023-02-03T14:15:57.765</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
       <Modified>2023-02-03T14:15:57.793</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
       <Modified>2023-02-03T14:15:57.899</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
       <Modified>2023-02-03T14:14:27.669</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
       <Modified>2023-02-03T14:14:27.670</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-02-03T14:15:57.946</Modified>
+      <Modified>2023-02-17T14:01:02.670</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.169</Modified>
+      <Modified>2023-02-17T14:01:02.858</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.182</Modified>
+      <Modified>2023-02-17T14:01:02.858</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.190</Modified>
+      <Modified>2023-02-17T14:01:02.874</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.205</Modified>
+      <Modified>2023-02-17T14:01:02.889</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.261</Modified>
+      <Modified>2023-02-17T14:01:02.936</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.007</Modified>
+      <Modified>2023-02-17T14:01:02.717</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.010</Modified>
+      <Modified>2023-02-17T14:01:02.717</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.022</Modified>
+      <Modified>2023-02-17T14:01:02.733</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.013</Modified>
+      <Modified>2023-02-17T14:01:02.717</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.016</Modified>
+      <Modified>2023-02-17T14:01:02.733</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-02-03T14:15:57.990</Modified>
+      <Modified>2023-02-17T14:01:02.702</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-02-03T14:15:57.993</Modified>
+      <Modified>2023-02-17T14:01:02.702</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.005</Modified>
+      <Modified>2023-02-17T14:01:02.717</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-02-03T14:15:57.995</Modified>
+      <Modified>2023-02-17T14:01:02.717</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-02-03T14:15:57.999</Modified>
+      <Modified>2023-02-17T14:01:02.717</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-02-03T14:15:57.953</Modified>
+      <Modified>2023-02-17T14:01:02.670</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-02-03T14:15:57.956</Modified>
+      <Modified>2023-02-17T14:01:02.686</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-02-03T14:15:57.960</Modified>
+      <Modified>2023-02-17T14:01:02.686</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-02-03T14:15:57.963</Modified>
+      <Modified>2023-02-17T14:01:02.686</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-02-03T14:15:57.969</Modified>
+      <Modified>2023-02-17T14:01:02.686</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-02-03T14:15:57.972</Modified>
+      <Modified>2023-02-17T14:01:02.686</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-02-03T14:15:57.974</Modified>
+      <Modified>2023-02-17T14:01:02.686</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-02-03T14:15:57.987</Modified>
+      <Modified>2023-02-17T14:01:02.702</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-02-03T14:15:57.977</Modified>
+      <Modified>2023-02-17T14:01:02.702</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-02-03T14:15:57.980</Modified>
+      <Modified>2023-02-17T14:01:02.702</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.063</Modified>
+      <Modified>2023-02-17T14:01:02.764</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.069</Modified>
+      <Modified>2023-02-17T14:01:02.764</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.077</Modified>
+      <Modified>2023-02-17T14:01:02.780</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.088</Modified>
+      <Modified>2023-02-17T14:01:02.780</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.102</Modified>
+      <Modified>2023-02-17T14:01:02.795</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.041</Modified>
+      <Modified>2023-02-17T14:01:02.749</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.044</Modified>
+      <Modified>2023-02-17T14:01:02.749</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.047</Modified>
+      <Modified>2023-02-17T14:01:02.749</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.051</Modified>
+      <Modified>2023-02-17T14:01:02.749</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.058</Modified>
+      <Modified>2023-02-17T14:01:02.764</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.025</Modified>
+      <Modified>2023-02-17T14:01:02.733</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.028</Modified>
+      <Modified>2023-02-17T14:01:02.733</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.031</Modified>
+      <Modified>2023-02-17T14:01:02.733</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.034</Modified>
+      <Modified>2023-02-17T14:01:02.749</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.039</Modified>
+      <Modified>2023-02-17T14:01:02.749</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.106</Modified>
+      <Modified>2023-02-17T14:01:02.795</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.112</Modified>
+      <Modified>2023-02-17T14:01:02.811</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.119</Modified>
+      <Modified>2023-02-17T14:01:02.811</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.129</Modified>
+      <Modified>2023-02-17T14:01:02.827</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.157</Modified>
+      <Modified>2023-02-17T14:01:02.842</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\csgo_hugs.scale-100.png">
+      <PackagePath>csgo_hugs.scale-100.png</PackagePath>
+      <Modified>2020-11-17T13:43:36.367</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-02-03T14:15:57.987</Modified>
+      <Modified>2023-02-17T14:01:02.655</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-02-03T14:15:57.996</Modified>
+      <Modified>2023-02-17T14:01:02.655</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.008</Modified>
+      <Modified>2023-02-17T14:01:02.670</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.026</Modified>
+      <Modified>2023-02-17T14:01:02.686</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-02-03T14:15:58.071</Modified>
+      <Modified>2023-02-17T14:01:02.733</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

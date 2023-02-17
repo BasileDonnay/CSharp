@@ -1,1 +1,1 @@
-C:\Users\basil\git\ProjetCSharp\ProjetCSharp\ProjetCSharp.csproj;x64
+C:\Users\basil\git\ProjetCSharp\CSharp\ProjetCSharp\ProjetCSharp.csproj;x64

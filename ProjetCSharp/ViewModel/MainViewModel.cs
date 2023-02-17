@@ -1,24 +1,23 @@
 namespace ProjetCSharp.ViewModel;
 
-public class MainViewModel : ContentPage
+public partial class MainViewModel : ObservableObject
 {
 
     int count = 0;
+    [ObservableProperty]
+    string text = "salueteet";
 
     public MainViewModel()
 	{
 		
 	}
 
-    private void OnCounterClicked(object sender, EventArgs e)
+    [RelayCommand]
+    async Task GoToDetailsPage (string data)
     {
-        count++;
-
-        if (count == 1)
-            CounterBtn.Text = $"Clicked {count} time";
-        else
-            CounterBtn.Text = $"Clicked {count} times";
-
-        SemanticScreenReader.Announce(CounterBtn.Text);
+        await Shell.Current.GoToAsync(nameof(DetailsPage), true, new Dictionary<string, object>
+        {
+            {"Databc", data }
+        });
     }
 }

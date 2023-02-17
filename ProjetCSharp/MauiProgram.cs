@@ -1,4 +1,6 @@
-﻿namespace ProjetCSharp;
+﻿using ProjetCSharp.View;
+
+namespace ProjetCSharp;
 
 public static class MauiProgram
 {
@@ -15,6 +17,10 @@ public static class MauiProgram
 
         builder.Services.AddSingleton<MainPage>();
         builder.Services.AddSingleton<MainViewModel>();
-		return builder.Build();
+
+        builder.Services.AddTransient<DetailsPage>();
+        builder.Services.AddTransient<DetailsViewModel>();
+
+        return builder.Build();
 	}
 }
