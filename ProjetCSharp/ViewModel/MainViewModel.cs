@@ -1,3 +1,5 @@
+using System.Collections.ObjectModel;
+
 namespace ProjetCSharp.ViewModel;
 
 public partial class MainViewModel : ObservableObject
@@ -7,10 +9,21 @@ public partial class MainViewModel : ObservableObject
     [ObservableProperty]
     string text = "salueteet";
 
+    public ObservableCollection <StudentModel> MyShowList { get; } = new();
+
     public MainViewModel()
 	{
-		
-	}
+		StudentModel student1 = new StudentModel("12", "ddd", "dded", "ssssss", "csgo_hugs.png");
+        StudentModel student2 = new StudentModel("12", "ddd", "dded", "ssssss", "csgo_hugs.png");
+
+        Globals.MyList.Add(student1);
+        Globals.MyList.Add(student2);
+
+        foreach(StudentModel student in Globals.MyList) 
+        {
+            MyShowList.Add(student);
+        }
+    }
 
     [RelayCommand]
     async Task GoToDetailsPage (string data)
@@ -19,5 +32,14 @@ public partial class MainViewModel : ObservableObject
         {
             {"Databc", data }
         });
+    }
+
+    [RelayCommand]
+    async Task GetObject()
+    {
+        StudentModel student1 = new StudentModel("12", "ddd", "dded", "ssssss", "csgo_hugs.png");
+
+        Globals.MyList.Add(student1);
+        MyShowList.Add(student1);
     }
 }
