@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:ProjectBase.ViewModel"
+             xmlns:model="clr-namespace:ProjectBase.Model"
+             x:DataType="viewmodel:MainViewModel"
+             x:Class="ProjectBase.MainPage"
+             x:Name="MyPage">
+
+
+    <Grid Padding="10" RowDefinitions="Auto,*" ColumnDefinitions="*,*" BackgroundColor="Transparent">
+        <Button 
+            Text="Add Student"
+            Command="{Binding GetObjectCommand}"
+            Grid.Row="0"
+            Grid.Column="0" 
+            HeightRequest="60" 
+            WidthRequest="150"
+            HorizontalOptions="Start">
+        </Button>
+        <CollectionView Grid.Column="0" Grid.Row="1" SelectionMode="None" ItemsSource="{Binding MyShownList}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:StudentModel">
+                    <HorizontalStackLayout Padding="10">
+                        <Image
+                        Aspect="AspectFill"
+                        HeightRequest="100"
+                        Source="{Binding Photo}"
+                        WidthRequest="100" />
+                        <VerticalStackLayout VerticalOptions="Center" Padding="10" Spacing="2">
+                            <Label Text="{Binding Id}"/>
+                            <Label Text="{Binding Name}"/>
+                            <Label Text="{Binding Surname}"/>
+                            <Label Text="{Binding Email}"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+
+    <ContentPage.MenuBarItems>  <!-- Menu déroulant -->
+        <MenuBarItem Text="Menu 1" BindingContext="{Binding Path=BindingContext, Source={x:Reference MyPage}}">
+            <MenuFlyoutItem Text="Informations 1" Command="{Binding GoToDetailsPageCommand}" CommandParameter="Hello Everyone"/>
+            <MenuFlyoutItem Text="Informations 2"/>
+            <MenuFlyoutItem Text="Informations 3"/> 
+        </MenuBarItem>
+        <MenuBarItem Text="Menu 2">
+            <MenuFlyoutSubItem Text="Sous-Menu 1">
+                <MenuFlyoutItem Text="Informations 3"/>
+                <MenuFlyoutItem Text="Informations 2"/>
+                <MenuFlyoutItem Text="Informations 1"/>
+            </MenuFlyoutSubItem>
+           
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+
+
+    <!--<scrollview>
+        <horizontalstacklayout
+            spacing="25"
+            padding="30,0"
+            verticaloptions="center">
+            <label text="bonjour"/>
+            <button text="{binding montexte}" 
+                    command="{binding gotodetailspagecommand}"
+                    commandparameter="mydetailspage"/>
+        </horizontalstacklayout>
+    </scrollview>-->
+
+</ContentPage>
