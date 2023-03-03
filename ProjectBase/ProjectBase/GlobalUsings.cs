@@ -11,5 +11,6 @@ global using System.Diagnostics;
 
 public class Globals
 {
-   public static List<StudentModel> MyList = new List<StudentModel>();
+    public static List<StudentModel> MyList = new List<StudentModel>();
+    internal static Queue<string> SerialBuffer = new Queue<string>();
 }
