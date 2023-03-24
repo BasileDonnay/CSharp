@@ -20,18 +20,20 @@
         </Button>
         <CollectionView Grid.Column="0" Grid.Row="1" SelectionMode="None" ItemsSource="{Binding MyShownList}">
             <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="model:StudentModel">
+                <DataTemplate x:DataType="model:CourseModel">
                     <HorizontalStackLayout Padding="10">
+                        <!--
                         <Image
                         Aspect="AspectFill"
                         HeightRequest="100"
                         Source="{Binding Photo}"
                         WidthRequest="100" />
+                        -->
                         <VerticalStackLayout VerticalOptions="Center" Padding="10" Spacing="2">
-                            <Label Text="{Binding Id}"/>
-                            <Label Text="{Binding Name}"/>
-                            <Label Text="{Binding Surname}"/>
-                            <Label Text="{Binding Email}"/>
+                            <!-- ici j'affiche -->
+                               <Label Text="{Binding Code}"/>
+                           
+                            
                         </VerticalStackLayout>
                     </HorizontalStackLayout>
                 </DataTemplate>
@@ -39,9 +41,10 @@
         </CollectionView>
     </Grid>
 
+    
     <ContentPage.MenuBarItems>  <!-- Menu déroulant -->
         <MenuBarItem Text="Menu 1" BindingContext="{Binding Path=BindingContext, Source={x:Reference MyPage}}">
-            <MenuFlyoutItem Text="Informations 1" Command="{Binding GoToDetailsPageCommand}" CommandParameter="Hello Everyone"/>
+            <MenuFlyoutItem Text="Vers la page course" Command="{Binding GoToDetailsPageCommand}" CommandParameter="Hello Everyone"/> <!-- Je clique et sa me renvoie vers une autre page -->
             <MenuFlyoutItem Text="Informations 2"/>
             <MenuFlyoutItem Text="Informations 3"/> 
         </MenuBarItem>

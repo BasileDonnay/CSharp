@@ -5,8 +5,12 @@ public partial class DetailsViewModel : ObservableObject
 {
 	[ObservableProperty]
 	string monTxt ;
-	public DetailsViewModel()
+    
+    public DetailsViewModel()
 	{
-		
-	}
+
+        
+    }
+
+	
 }

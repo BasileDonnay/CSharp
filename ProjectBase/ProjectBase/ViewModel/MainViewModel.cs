@@ -7,20 +7,43 @@ public partial class MainViewModel : BaseViewModel
 {
     [ObservableProperty]
     string monTexte = " Go to details";
+    [ObservableProperty]
+    string activeTarget;
+    [ObservableProperty]
+    string monCode;
+
+
+    StudentService myService;
+    public ObservableCollection<CourseModel> MyShownList { get; } = new();
 
     DeviceOrientationServices MyDeviceOrientationService;
-    StudentService myService;
-    public ObservableCollection<StudentModel> MyShownList { get; } = new();
-
-
     public MainViewModel(StudentService myService)
     {
         this.myService = myService;
-        this.MyDeviceOrientationService = new DeviceOrientationServices();
 
+        this.MyDeviceOrientationService = new DeviceOrientationServices();
         MyDeviceOrientationService.ConfigureScanner();
+        MyDeviceOrientationService.SerialBuffer.Changed += SerialBuffer_Changed;
 
     }
+
+
+    private void SerialBuffer_Changed(object sender, EventArgs e)
+    {
+
+        DeviceOrientationServices.QueueBuffer myQueue = (DeviceOrientationServices.QueueBuffer)sender;
+
+        //ID c'est la code QR que l'on va scanner
+        string codeQr = myQueue.Dequeue().ToString();
+
+        foreach (var data in Globals.MyList)
+        {
+            //le .Code c'est un c'est attribut du course model, si c'est == alors je l'ajoute dans ma liste
+            if (codeQr == data.Code) MyShownList.Add(data);
+            MonCode = codeQr;
+        }
+    }
+
     [RelayCommand]
     async Task GoToDetailsPage(string data)
     {
@@ -29,10 +52,21 @@ public partial class MainViewModel : BaseViewModel
             {"Databc", data }
         });
     }
+    //ici c'est on est renvoyer vers la page home
+
+    [RelayCommand]
+    async Task GoToHomePage(string data)
+    {
+        await Shell.Current.GoToAsync(nameof(Hom), true, new Dictionary<string, object>
+        {
+            {"Databc", data }
+        });
+    }
 
     [RelayCommand]
     async Task GetObject()
     {
+        bool test = MyDeviceOrientationService.mySerialPort.IsOpen;
         try
         {
             Globals.MyList = await myService.GetStudents();
@@ -44,7 +78,7 @@ public partial class MainViewModel : BaseViewModel
         }
         MyShownList.Clear();
 
-        foreach (StudentModel stu in Globals.MyList)
+        foreach (CourseModel stu in Globals.MyList)
         {
             MyShownList.Add(stu);
         }

@@ -5,28 +5,31 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO.Ports;
+using System.Collections;
 
 namespace ProjectBase.Services;
 
 public partial class DeviceOrientationServices
 {
-    SerialPort mySerialPort;
+    public SerialPort mySerialPort;
+
+    public QueueBuffer SerialBuffer;
 
     public partial void ConfigureScanner()
-    { 
-    
-    this.mySerialPort = new SerialPort();
+    {
+        this.SerialBuffer = new();
+        this.mySerialPort = new SerialPort();
         String ComPort = "COM3";
 
 
-        if(ComPort != "")
+        if (ComPort != "")
         {
 
 
-            mySerialPort.PortName= ComPort;
+            mySerialPort.PortName = ComPort;
             mySerialPort.BaudRate = 9600;
             mySerialPort.Parity = Parity.None;
-            mySerialPort.DataBits= 8;
+            mySerialPort.DataBits = 8;
             mySerialPort.StopBits = StopBits.One;
             mySerialPort.ReadTimeout = 1000;
             mySerialPort.WriteTimeout = 1000;
@@ -38,7 +41,7 @@ public partial class DeviceOrientationServices
                 mySerialPort.Open();
             }
 
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
                 Shell.Current.DisplayAlert("Error!", ex.Message, "OK");
@@ -46,11 +49,9 @@ public partial class DeviceOrientationServices
             }
 
         }
-    
-    
+
+
     }
-
-
     public void DataHandler(object sender, SerialDataReceivedEventArgs e)
     {
 
@@ -59,11 +60,29 @@ public partial class DeviceOrientationServices
 
         data = sp.ReadTo("\r");
 
-        Globals.SerialBuffer.Enqueue(data);
+        SerialBuffer.Enqueue(data);
 
     }
 
-   
 
+    public class QueueBuffer : Queue
+    {
+
+
+        public event EventHandler Changed;
+
+        protected virtual void OnChanged()
+        {
+            if (Changed != null) Changed(this, EventArgs.Empty);
+        }
+
+        public override void Enqueue(object item)
+        {
+            base.Enqueue(item);
+            OnChanged();
+        }
+
+    }
   
 }
+
