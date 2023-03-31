@@ -63,20 +63,46 @@ public partial class MainViewModel : BaseViewModel
         });
     }
 
+
+  
+    public void RefreshPage()
+    {
+        MyShownList.Clear();
+
+        foreach ( var item in Globals.MyList )
+        {
+            MyShownList.Add(item);
+        }
+    }
+
+
+
+
+
     [RelayCommand]
     async Task GetObject()
     {
+
+        if (IsBusy) return;
+        StudentService MyService = new();
+
         bool test = MyDeviceOrientationService.mySerialPort.IsOpen;
         try
         {
-            Globals.MyList = await myService.GetStudents();
+            IsBusy = true;
+            Globals.MyList = await MyService.GetStudents();
         }
         catch (Exception ex)
         {
             Debug.WriteLine($"Unable to get Students: {ex.Message}");
             await Shell.Current.DisplayAlert("Error!", ex.Message, "OK");
         }
+        finally { IsBusy = false; }
+
         MyShownList.Clear();
+
+        
+
 
         foreach (CourseModel stu in Globals.MyList)
         {

@@ -2,11 +2,21 @@
 
 public partial class MainPage : ContentPage
 {
+	MainViewModel viewModel;
 
-	public MainPage(MainViewModel viewModel)
+    public MainPage(MainViewModel viewModel)
 	{
-		InitializeComponent();
+        this.viewModel = viewModel;
+        InitializeComponent();
 		BindingContext= viewModel;
+	
 	}
+
+    protected override void OnNavigatedTo(NavigatedToEventArgs args)
+    {
+        BindingContext = null;
+		viewModel.RefreshPage();
+		BindingContext = viewModel;
+    }
 }
 

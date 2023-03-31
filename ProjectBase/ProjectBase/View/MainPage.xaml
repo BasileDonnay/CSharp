@@ -23,7 +23,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <Grid Padding="10" RowDefinitions="Auto,*" ColumnDefinitions="*,*" BackgroundColor="Transparent">
+    <Grid Padding="10" RowDefinitions="Auto,*" ColumnDefinitions="*,*" BackgroundColor="Gray">
         <Button 
             Text="Add Student"
             Command="{Binding GetObjectCommand}"
