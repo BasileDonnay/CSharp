@@ -31,13 +31,13 @@ public partial class DetailsPage : ContentPage
             StudentService studentService = new StudentService();
             List<CourseModel> courseModels = await studentService.GetStudents();
             courseModels.Add(nouvelleCourse);
-/*
+
             string studentJsonFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "students.json");
             using (var stream = new FileStream(studentJsonFilePath, FileMode.Create))
             {
                 await JsonSerializer.SerializeAsync(stream, courseModels);
             }
-*/
+
             await DisplayAlert("Success", "Data saved successfully", "OK");
         }
         catch (InvalidOperationException ex)

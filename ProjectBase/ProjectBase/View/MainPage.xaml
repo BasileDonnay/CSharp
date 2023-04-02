@@ -50,7 +50,7 @@
     <ContentPage.MenuBarItems>
         <MenuBarItem Text="Menu 1" BindingContext="{Binding Path=BindingContext, Source={x:Reference MyPage}}">
             <MenuFlyoutItem Text="Vers la page course" Command="{Binding GoToDetailsPageCommand}" CommandParameter="Hello Everyone"/>
-            <MenuFlyoutItem Text="Informations 2"/>
+            <!--<MenuFlyoutItem Text="Informations 2"/>
             <MenuFlyoutItem Text="Informations 3"/>
         </MenuBarItem>
         <MenuBarItem Text="Menu 2">
@@ -58,7 +58,7 @@
                 <MenuFlyoutItem Text="Informations 3"/>
                 <MenuFlyoutItem Text="Informations 2"/>
                 <MenuFlyoutItem Text="Informations 1"/>
-            </MenuFlyoutSubItem>
+            </MenuFlyoutSubItem>-->
         </MenuBarItem>
     </ContentPage.MenuBarItems>
 

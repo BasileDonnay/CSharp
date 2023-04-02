@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sowmi\\Coding\\ProjectGitHub\\CSharp\\ProjectBase\\ProjectBase\\ProjectBase.csproj": {}
+    "C:\\Users\\basil\\git\\CSharp\\ProjectBase\\ProjectBase\\ProjectBase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sowmi\\Coding\\ProjectGitHub\\CSharp\\ProjectBase\\ProjectBase\\ProjectBase.csproj": {
+    "C:\\Users\\basil\\git\\CSharp\\ProjectBase\\ProjectBase\\ProjectBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sowmi\\Coding\\ProjectGitHub\\CSharp\\ProjectBase\\ProjectBase\\ProjectBase.csproj",
+        "projectUniqueName": "C:\\Users\\basil\\git\\CSharp\\ProjectBase\\ProjectBase\\ProjectBase.csproj",
         "projectName": "ProjectBase",
-        "projectPath": "C:\\Users\\sowmi\\Coding\\ProjectGitHub\\CSharp\\ProjectBase\\ProjectBase\\ProjectBase.csproj",
-        "packagesPath": "C:\\Users\\sowmi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sowmi\\Coding\\ProjectGitHub\\CSharp\\ProjectBase\\ProjectBase\\obj\\",
+        "projectPath": "C:\\Users\\basil\\git\\CSharp\\ProjectBase\\ProjectBase\\ProjectBase.csproj",
+        "packagesPath": "C:\\Users\\basil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\basil\\git\\CSharp\\ProjectBase\\ProjectBase\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sowmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\basil\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -67,12 +67,12 @@
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.552, )",
+              "version": "[6.0.548, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.552, )",
+              "version": "[6.0.548, )",
               "autoReferenced": true
             },
             "System.IO.Ports": {
@@ -100,35 +100,35 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.MacCatalyst.Ref",
-              "version": "[16.2.19, 16.2.19]"
+              "version": "[16.1.228, 16.1.228]"
             },
             {
               "name": "Microsoft.MacCatalyst.Runtime.maccatalyst-x64",
-              "version": "[16.2.19, 16.2.19]"
+              "version": "[16.1.228, 16.1.228]"
             },
             {
               "name": "Microsoft.Maui.Controls.Ref.maccatalyst",
-              "version": "[6.0.552, 6.0.552]"
+              "version": "[6.0.548, 6.0.548]"
             },
             {
               "name": "Microsoft.Maui.Controls.Runtime.maccatalyst",
-              "version": "[6.0.552, 6.0.552]"
+              "version": "[6.0.548, 6.0.548]"
             },
             {
               "name": "Microsoft.Maui.Core.Ref.maccatalyst",
-              "version": "[6.0.552, 6.0.552]"
+              "version": "[6.0.548, 6.0.548]"
             },
             {
               "name": "Microsoft.Maui.Core.Runtime.maccatalyst",
-              "version": "[6.0.552, 6.0.552]"
+              "version": "[6.0.548, 6.0.548]"
             },
             {
               "name": "Microsoft.Maui.Essentials.Ref.maccatalyst",
-              "version": "[6.0.552, 6.0.552]"
+              "version": "[6.0.548, 6.0.548]"
             },
             {
               "name": "Microsoft.Maui.Essentials.Runtime.maccatalyst",
-              "version": "[6.0.552, 6.0.552]"
+              "version": "[6.0.548, 6.0.548]"
             }
           ],
           "frameworkReferences": {
@@ -148,7 +148,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         },
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
@@ -179,7 +179,7 @@
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.59, )",
+              "version": "[7.0.52, )",
               "autoReferenced": true
             },
             "System.IO.Ports": {
@@ -270,7 +270,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
@@ -301,7 +301,7 @@
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.59, )",
+              "version": "[7.0.52, )",
               "autoReferenced": true
             },
             "System.IO.Ports": {
@@ -337,7 +337,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
@@ -368,12 +368,12 @@
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.59, )",
+              "version": "[7.0.52, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": {
               "target": "Package",
-              "version": "[7.0.59, )",
+              "version": "[7.0.52, )",
               "autoReferenced": true
             },
             "Microsoft.Windows.SDK.BuildTools": {
@@ -384,7 +384,7 @@
             },
             "Microsoft.WindowsAppSDK": {
               "target": "Package",
-              "version": "[1.2.221209.1, )",
+              "version": "[1.2.221109.1, )",
               "autoReferenced": true
             },
             "System.IO.Ports": {
@@ -406,11 +406,11 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[7.0.4, 7.0.4]"
+              "version": "[7.0.2, 7.0.2]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[7.0.4, 7.0.4]"
+              "version": "[7.0.2, 7.0.2]"
             },
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -418,7 +418,7 @@
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[7.0.4, 7.0.4]"
+              "version": "[7.0.2, 7.0.2]"
             }
           ],
           "frameworkReferences": {
@@ -438,7 +438,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
