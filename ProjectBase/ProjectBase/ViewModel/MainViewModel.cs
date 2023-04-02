@@ -69,10 +69,12 @@ public partial class MainViewModel : BaseViewModel
     {
         MyShownList.Clear();
 
-        foreach ( var item in Globals.MyList )
+        foreach ( var item in Globals.MyList)
         {
             MyShownList.Add(item);
+            Debug.WriteLine(item.Nom);
         }
+
     }
 
 
