@@ -64,12 +64,12 @@ public partial class MainViewModel : BaseViewModel
     }
 
 
-  
+
     public void RefreshPage()
     {
         MyShownList.Clear();
 
-        foreach ( var item in Globals.MyList)
+        foreach (var item in Globals.MyList)
         {
             MyShownList.Add(item);
             Debug.WriteLine(item.Nom);
@@ -103,12 +103,19 @@ public partial class MainViewModel : BaseViewModel
 
         MyShownList.Clear();
 
-        
+
 
 
         foreach (CourseModel stu in Globals.MyList)
         {
             MyShownList.Add(stu);
         }
+    }
+    [RelayCommand]
+    public async Task SetUsersJSONfile()
+    {
+        StudentService MyService = new();
+
+        myService.SetUsersJSONfile();
     }
 }

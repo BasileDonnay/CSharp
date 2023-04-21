@@ -33,12 +33,23 @@
             WidthRequest="150"
             HorizontalOptions="Start">
         </Button>
-        <CollectionView Grid.Column="0" Grid.Row="1" SelectionMode="None" ItemsSource="{Binding MyShownList}">
+
+        <Button 
+            Text="Sauvegarder"
+            Command="{Binding SetUsersJSONfileCommand}"
+            Grid.Row="0"
+            Grid.Column="1" 
+            HeightRequest="60" 
+            WidthRequest="150"
+            HorizontalOptions="Start">
+        </Button>
+
+        <CollectionView Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" SelectionMode="None" ItemsSource="{Binding MyShownList}">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:CourseModel">
                     <Frame HasShadow="True">
                         <StackLayout Orientation="Horizontal">
-                            <!-- <Label Text="{Binding Code}" FontSize="Large"/> -->
+                            <!--<Label Text="{Binding Code}" FontSize="Large"/>-->
                             <Label Text="{Binding Nom}" FontSize="Large"/>
                         </StackLayout>
                     </Frame>
