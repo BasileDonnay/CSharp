@@ -27,17 +27,7 @@ public partial class DetailsPage : ContentPage
                 Localite = localite
             };
            
-
-            CourseService courseService = new CourseService();
-            List<CourseModel> courseModels = await courseService.GetCourse();
-            courseModels.Add(nouvelleCourse);
-
-            /*string studentJsonFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "students.json");
-            using (var stream = new FileStream(studentJsonFilePath, FileMode.Create))
-            {
-                await JsonSerializer.SerializeAsync(stream, courseModels);
-            }*/
-            Globals.MyList = courseModels;
+            Globals.MyList.Add(nouvelleCourse);
 
             await DisplayAlert("Success", "Data saved successfully", "OK");
         }

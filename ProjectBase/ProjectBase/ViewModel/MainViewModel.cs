@@ -39,8 +39,9 @@ public partial class MainViewModel : BaseViewModel
         foreach (var data in Globals.MyList)
         {
             //le .Code c'est un c'est attribut du course model, si c'est == alors je l'ajoute dans ma liste
-            if (codeQr == data.Code) MyShownList.Add(data);
-            MonCode = codeQr;
+            if (codeQr == data.Code) 
+                MyShownList.Add(data);
+            //MonCode = codeQr;
         }
     }
 
