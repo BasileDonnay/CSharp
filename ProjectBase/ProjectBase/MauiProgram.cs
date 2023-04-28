@@ -28,7 +28,7 @@ public static class MauiProgram
         builder.Services.AddTransient<RacePage>();
 
         builder.Services.AddTransient<HomeViewModel>();
-        builder.Services.AddTransient<Hom>();
+        
 
         builder.Services.AddSingleton<StudentService>();
 
