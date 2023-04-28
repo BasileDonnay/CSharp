@@ -706,8 +706,8 @@
     <AppxPackagedFile Include="C:\Users\sowmi\Coding\ProjectGitHub\CSharp\ProjectBase\ProjectBase\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sowmi\Coding\ProjectGitHub\CSharp\ProjectBase\ProjectBase\Resources\Raw\students.json">
-      <PackagePath>students.json</PackagePath>
+    <AppxPackagedFile Include="C:\Users\sowmi\Coding\ProjectGitHub\CSharp\ProjectBase\ProjectBase\Resources\Raw\courses.json">
+      <PackagePath>courses.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sowmi\Coding\ProjectGitHub\CSharp\ProjectBase\ProjectBase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>

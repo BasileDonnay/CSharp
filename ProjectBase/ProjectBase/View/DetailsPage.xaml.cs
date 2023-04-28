@@ -28,8 +28,8 @@ public partial class DetailsPage : ContentPage
             };
            
 
-            StudentService studentService = new StudentService();
-            List<CourseModel> courseModels = await studentService.GetStudents();
+            CourseService courseService = new CourseService();
+            List<CourseModel> courseModels = await courseService.GetCourse();
             courseModels.Add(nouvelleCourse);
 
             /*string studentJsonFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "students.json");

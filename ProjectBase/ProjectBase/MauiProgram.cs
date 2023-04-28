@@ -27,10 +27,10 @@ public static class MauiProgram
         builder.Services.AddTransient<RaceViewModel>();
         builder.Services.AddTransient<RacePage>();
 
-        builder.Services.AddTransient<HomeViewModel>();
+        
         
 
-        builder.Services.AddSingleton<StudentService>();
+        builder.Services.AddSingleton<CourseService>();
 
 
         return builder.Build();

@@ -50,7 +50,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\mugiwara.jpg" />
-	  <None Remove="Resources\Raw\students.json" />
+	  <None Remove="Resources\Raw\courses.json" />
 	</ItemGroup>
 
 	<ItemGroup>

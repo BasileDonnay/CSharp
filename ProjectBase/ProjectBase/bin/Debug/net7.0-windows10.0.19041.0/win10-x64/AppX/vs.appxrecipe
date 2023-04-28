@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\sowmi\Coding\ProjectGitHub\CSharp\ProjectBase\ProjectBase\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-28T11:54:04.622</Modified>
+      <Modified>2023-04-28T12:10:33.801</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\sowmi\Coding\ProjectGitHub\CSharp\ProjectBase\ProjectBase\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-04-28T11:54:03.002</Modified>
+      <Modified>2023-04-28T12:10:32.895</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sowmi\Coding\ProjectGitHub\CSharp\ProjectBase\ProjectBase\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectBase.runtimeconfig.json">
       <PackagePath>ProjectBase.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sowmi\Coding\ProjectGitHub\CSharp\ProjectBase\ProjectBase\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectBase.dll">
       <PackagePath>ProjectBase.dll</PackagePath>
-      <Modified>2023-04-28T11:53:56.346</Modified>
+      <Modified>2023-04-28T12:10:29.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sowmi\Coding\ProjectGitHub\CSharp\ProjectBase\ProjectBase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ProjectBase.exe</PackagePath>
-      <Modified>2023-04-28T11:53:56.481</Modified>
+      <Modified>2023-04-28T12:10:29.751</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sowmi\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -924,7 +924,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sowmi\Coding\ProjectGitHub\CSharp\ProjectBase\ProjectBase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectBase.deps.json">
       <PackagePath>ProjectBase.deps.json</PackagePath>
-      <Modified>2023-04-28T11:54:03.927</Modified>
+      <Modified>2023-04-28T12:10:33.452</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.59\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -942,8 +942,8 @@
       <PackagePath>AboutAssets.txt</PackagePath>
       <Modified>2023-04-21T14:10:12.241</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sowmi\Coding\ProjectGitHub\CSharp\ProjectBase\ProjectBase\Resources\Raw\students.json">
-      <PackagePath>students.json</PackagePath>
+    <AppxPackagedFile Include="C:\Users\sowmi\Coding\ProjectGitHub\CSharp\ProjectBase\ProjectBase\Resources\Raw\courses.json">
+      <PackagePath>courses.json</PackagePath>
       <Modified>2023-04-21T14:10:12.241</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sowmi\Coding\ProjectGitHub\CSharp\ProjectBase\ProjectBase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">

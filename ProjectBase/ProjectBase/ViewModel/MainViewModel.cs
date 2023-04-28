@@ -13,11 +13,11 @@ public partial class MainViewModel : BaseViewModel
     string monCode;
 
 
-    StudentService myService;
+    CourseService myService;
     public ObservableCollection<CourseModel> MyShownList { get; } = new();
 
     DeviceOrientationServices MyDeviceOrientationService;
-    public MainViewModel(StudentService myService)
+    public MainViewModel(CourseService myService)
     {
         this.myService = myService;
 
@@ -52,16 +52,7 @@ public partial class MainViewModel : BaseViewModel
             {"Databc", data }
         });
     }
-    //ici c'est on est renvoyer vers la page home
-
-    [RelayCommand]
-    async Task GoToHomePage(string data)
-    {
-        await Shell.Current.GoToAsync(nameof(Hom), true, new Dictionary<string, object>
-        {
-            {"Databc", data }
-        });
-    }
+   
 
     [RelayCommand]
     async Task GoToRacePage(string data)
@@ -93,13 +84,13 @@ public partial class MainViewModel : BaseViewModel
     {
 
         if (IsBusy) return;
-        StudentService MyService = new();
+        CourseService MyService = new();
 
         bool test = MyDeviceOrientationService.mySerialPort.IsOpen;
         try
         {
             IsBusy = true;
-            Globals.MyList = await MyService.GetStudents();
+            Globals.MyList = await MyService.GetCourse();
         }
         catch (Exception ex)
         {
@@ -121,7 +112,7 @@ public partial class MainViewModel : BaseViewModel
     [RelayCommand]
     public async Task SetUsersJSONfile()
     {
-        StudentService MyService = new();
+        CourseService MyService = new();
 
         myService.SetUsersJSONfile();
     }

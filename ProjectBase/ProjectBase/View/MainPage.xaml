@@ -25,7 +25,7 @@
 
     <Grid Padding="10" RowDefinitions="Auto,*" ColumnDefinitions="*,*" BackgroundColor="Gray">
         <Button 
-            Text="Add Student"
+            Text="Add Course"
             Command="{Binding GetObjectCommand}"
             Grid.Row="0"
             Grid.Column="0" 
