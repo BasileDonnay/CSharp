@@ -51,11 +51,28 @@
                         <StackLayout Orientation="Horizontal">
                             <!--<Label Text="{Binding Code}" FontSize="Large"/>-->
                             <Label Text="{Binding Nom}" FontSize="Large"/>
+                            <!-- ça recherche GoToRacePageCommand dans CourseModel je pense à cause du DataTemplate-->
+                            <!--<Button 
+                                    Text="Course"
+                                    Command="{Binding GoToRacePageCommand}"
+                                    HeightRequest="60" 
+                                    WidthRequest="150"
+                                    HorizontalOptions="Start">
+                            </Button>-->
                         </StackLayout>
                     </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+        <Button 
+            Text="Course"
+            Command="{Binding GoToRacePageCommand}"
+            Grid.Row="1"
+            Grid.Column="1" 
+            HeightRequest="60" 
+            WidthRequest="150"
+            HorizontalOptions="Start">
+        </Button>
     </Grid>
 
     <ContentPage.MenuBarItems>

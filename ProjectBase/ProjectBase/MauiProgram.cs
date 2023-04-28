@@ -23,9 +23,13 @@ public static class MauiProgram
 
         builder.Services.AddTransient<DetailsViewModel>(); // transitoire 
         builder.Services.AddTransient<DetailsPage>();
-		builder.Services.AddTransient<Hom>();
+
+        builder.Services.AddTransient<RaceViewModel>();
+        builder.Services.AddTransient<RacePage>();
 
         builder.Services.AddTransient<HomeViewModel>();
+        builder.Services.AddTransient<Hom>();
+
         builder.Services.AddSingleton<StudentService>();
 
 

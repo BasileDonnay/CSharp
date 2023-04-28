@@ -63,7 +63,14 @@ public partial class MainViewModel : BaseViewModel
         });
     }
 
-
+    [RelayCommand]
+    async Task GoToRacePage(string data)
+    {
+        await Shell.Current.GoToAsync(nameof(RacePage), true, new Dictionary<string, object>
+        {
+            {"Databc", data }
+        });
+    }
 
     public void RefreshPage()
     {
