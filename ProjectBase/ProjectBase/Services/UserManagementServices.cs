@@ -10,10 +10,10 @@ public partial class UserManagementServices
 {}
 public class CreateUserTables
 {
-    public CreateUserTables() 
+    public CreateUserTables()
     {
-        DataTable UserTable = new();
-        DataTable AccessTable = new();
+        DataTable UserTable = new DataTable();
+        DataTable AccessTable = new DataTable();
 
         DataColumn User_ID = new DataColumn("User_ID", System.Type.GetType("System.Int16"));
         DataColumn UserName = new DataColumn("UserName", System.Type.GetType("System.String"));
@@ -27,34 +27,42 @@ public class CreateUserTables
         DataColumn ModifyObject = new DataColumn("ModifyObject", System.Type.GetType("System.Boolean"));
         DataColumn ChangeUserRights = new DataColumn("ChangeUserRights", System.Type.GetType("System.Boolean"));
 
-        //UserTable
-        UserTable.TableName= "Users";
-
-        User_ID.AutoIncrement=true;
-        User_ID.Unique=true;
+        /* UserTable*/
+        UserTable.TableName = "Users";
+        User_ID.Unique = true;
+        User_ID.AutoIncrement = true;
         UserTable.Columns.Add(User_ID);
 
-        UserName.Unique=true;
+        UserName.Unique = true;
         UserTable.Columns.Add(UserName);
 
+        UserPassword.Unique = false;
         UserTable.Columns.Add(UserPassword);
+
+        AccessType.Unique = false;
         UserTable.Columns.Add(AccessType);
 
-        //AccessTable
+        /* AccessTable*/
         AccessTable.TableName = "Access";
-
-        Access_ID.AutoIncrement = true;
-        Access_ID.Unique=true;
+        Access_ID.Unique = true;
         AccessTable.Columns.Add(Access_ID);
 
-        AccessName.Unique=true;
+        AccessName.Unique = true;
         AccessTable.Columns.Add(AccessName);
 
+        CreateObject.Unique = false;
         AccessTable.Columns.Add(CreateObject);
-        AccessTable.Columns.Add(DestroyObject); 
-        AccessTable.Columns.Add(ModifyObject); 
+
+        DestroyObject.Unique = false;
+        AccessTable.Columns.Add(DestroyObject);
+
+        ModifyObject.Unique = false;
+        AccessTable.Columns.Add(ModifyObject);
+
+        ChangeUserRights.Unique = false;
         AccessTable.Columns.Add(ChangeUserRights);
 
+        /* Dataset & Datarelation */
         Globals.UserSet.Tables.Add(UserTable);
         Globals.UserSet.Tables.Add(AccessTable);
 
