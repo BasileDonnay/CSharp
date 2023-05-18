@@ -1,4 +1,3 @@
-
 using ProjectBase.Model;
 using Microsoft.Maui.Storage;
 
@@ -22,7 +21,7 @@ public partial class DetailsPage : ContentPage
         string nom = NomEntry.Text;
         string code = CodeEntry.Text;
         string localite = LocaliteEntry.Text;
-        string indice = IndiceEntry.Text;
+        string[] indices = IndiceEntry.Text.Split(',');
 
         // Récupérer le numéro de la course actuel à partir des préférences
         int currentCourseNumber = Preferences.Get("currentCourseNumber", 0);
@@ -35,9 +34,25 @@ public partial class DetailsPage : ContentPage
             Nom = nom,
             Code = code,
             Localite = localite,
-            Indice = indice,
             NumCourse = currentCourseNumber
         };
+
+        foreach (string indice in indices)
+        {
+            int currentIndiceNumber = Preferences.Get("currentIndiceNumber", 0);
+            currentIndiceNumber++;
+
+            IndiceModel newIndice = new IndiceModel()
+            {
+                Name = indice.Trim(), //trimming any leading or trailing spaces
+                Number = currentIndiceNumber
+            };
+
+            nouvelleCourse.Indices.Add(newIndice);
+
+            // Mettre à jour les préférences de l'application avec la nouvelle valeur du compteur d'indice
+            Preferences.Set("currentIndiceNumber", currentIndiceNumber);
+        }
 
         try
         {
@@ -51,13 +66,9 @@ public partial class DetailsPage : ContentPage
 
             await DisplayAlert("Success", "Data saved successfully", "OK");
         }
-        catch (InvalidOperationException ex)
+        catch (Exception ex) // Change from InvalidOperationException to Exception
         {
             await DisplayAlert("Error", ex.Message, "OK");
         }
     }
-
-
-
-
 }
