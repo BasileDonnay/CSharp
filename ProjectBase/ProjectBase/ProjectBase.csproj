@@ -66,6 +66,9 @@
 	  <Compile Update="View\RacePage.xaml.cs">
 	    <DependentUpon>RacePage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="View\LoginPage.xaml.cs">
+	    <DependentUpon>LoginPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="View\UserPage.xaml.cs">
 	    <DependentUpon>UserPage.xaml</DependentUpon>
 	  </Compile>
@@ -79,6 +82,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\RacePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\UserPage.xaml">

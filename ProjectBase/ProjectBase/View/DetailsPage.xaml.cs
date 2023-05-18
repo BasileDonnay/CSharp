@@ -10,8 +10,6 @@ public partial class DetailsPage : ContentPage
     {
         InitializeComponent();
         BindingContext = viewModel;
-
-
     }
 
     // Ajoutez un champ pour stocker le numéro de la course actuel

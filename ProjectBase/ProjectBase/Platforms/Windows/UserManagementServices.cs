@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.OleDb;
 using System.Linq;
+using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -53,7 +54,7 @@ public partial class UserManagementServices
 
             Users_Adapter.InsertCommand.Parameters[0].Value = name;
             Users_Adapter.InsertCommand.Parameters[1].Value = password;
-            Users_Adapter.InsertCommand.Parameters[2].Value = 2;
+            Users_Adapter.InsertCommand.Parameters[2].Value = access;
 
             int buffer = Users_Adapter.InsertCommand.ExecuteNonQuery();
 
@@ -143,6 +144,43 @@ public partial class UserManagementServices
                 {
                     Globals.UserSet.Tables["Access"].Rows.Add(new object[] { DBReader[0], DBReader[1], DBReader[2], DBReader[3], DBReader[4], DBReader[5] });
                 }
+            }
+
+            DBReader.Close();
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("Database", ex.Message, "OK");
+        }
+        finally
+        {
+            Connexion.Close();
+        }
+    }
+
+    internal async Task LoginDB(string username, string password)
+    {
+        OleDbCommand SelectCommand = new OleDbCommand("SELECT * FROM DB_Users WHERE UserName = \"" + username + "\" AND UserPassword = \"" + password + "\";", Connexion);
+
+        try
+        {
+            Connexion.Open();
+
+            OleDbDataReader DBReader = SelectCommand.ExecuteReader();
+
+            if (DBReader.HasRows)
+            {
+                while (DBReader.Read())
+                {
+                    Globals.isConnected = true;
+                    if ((Int32) DBReader[3] == 1)
+                    {
+                        Globals.isAdmin = true;
+                    }
+                    await Shell.Current.DisplayAlert("Database", "Connected", "OK");
+                }
+            } else {
+                await Shell.Current.DisplayAlert("Database", "Wrong name or password", "OK");
             }
 
             DBReader.Close();

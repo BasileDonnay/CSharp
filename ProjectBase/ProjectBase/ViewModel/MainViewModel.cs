@@ -14,6 +14,7 @@ public partial class MainViewModel : BaseViewModel
 
 
     CourseService myService;
+    public ObservableCollection<User> ShownList { get; set; } = new();
     public ObservableCollection<CourseModel> MyShownList { get; } = new();
 
     DeviceOrientationServices MyDeviceOrientationService;
@@ -26,9 +27,7 @@ public partial class MainViewModel : BaseViewModel
         MyDeviceOrientationService.SerialBuffer.Changed += SerialBuffer_Changed;
 
         CreateUserTables MyUserTables = new();
-
     }
-
 
     private void SerialBuffer_Changed(object sender, EventArgs e)
     {
@@ -76,6 +75,15 @@ public partial class MainViewModel : BaseViewModel
         });
     }
 
+    [RelayCommand]
+    async Task GoToLoginPage(string data)
+    {
+        await Shell.Current.GoToAsync(nameof(LoginPage), true, new Dictionary<string, object>
+        {
+            {"Databc", data }
+        });
+    }
+
     public void RefreshPage()
     {
         MyShownList.Clear();
@@ -95,7 +103,7 @@ public partial class MainViewModel : BaseViewModel
     [RelayCommand]
     async Task GetObject()
     {
-
+        if(!Globals.isConnected) return;
         if (IsBusy) return;
         CourseService MyService = new();
 

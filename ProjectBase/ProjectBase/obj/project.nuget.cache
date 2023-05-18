@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FuyXBAba6tnTE6+ihu9DhrD4Dvo+gokbM/XWo88Y4sWKrNExpzibxNuAEUhBsNyzKmPfwtUwof3g6tSCUBPkDA==",
+  "dgSpecHash": "d3dPUJv7o6Ui2XiRjP9Yjr6m8+qfqJbukb3ExVxBK8HGKjGj/xr4cuvkm+/F+um1NJxeV96KNYjeiWXARDGfbw==",
   "success": true,
   "projectFilePath": "C:\\Users\\basil\\git\\CSharp\\ProjectBase\\ProjectBase\\ProjectBase.csproj",
   "expectedPackageFiles": [
@@ -138,6 +138,7 @@
     "C:\\Users\\basil\\.nuget\\packages\\microsoft.maui.controls.runtime.maccatalyst\\6.0.548\\microsoft.maui.controls.runtime.maccatalyst.6.0.548.nupkg.sha512",
     "C:\\Users\\basil\\.nuget\\packages\\microsoft.maui.core.ref.maccatalyst\\6.0.548\\microsoft.maui.core.ref.maccatalyst.6.0.548.nupkg.sha512",
     "C:\\Users\\basil\\.nuget\\packages\\microsoft.maui.essentials.runtime.maccatalyst\\6.0.548\\microsoft.maui.essentials.runtime.maccatalyst.6.0.548.nupkg.sha512",
+    "C:\\Users\\basil\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\7.0.2\\microsoft.netcore.app.crossgen2.win-x64.7.0.2.nupkg.sha512",
     "C:\\Users\\basil\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.28\\microsoft.windows.sdk.net.ref.10.0.19041.28.nupkg.sha512",
     "C:\\Users\\basil\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.2\\microsoft.aspnetcore.app.runtime.win-x64.7.0.2.nupkg.sha512",
     "C:\\Users\\basil\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.2\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.2.nupkg.sha512",

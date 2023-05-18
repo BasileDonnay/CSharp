@@ -1,0 +1,65 @@
+is_global = true
+build_property.TargetFramework = net6.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProjectBase
+build_property.ProjectDir = C:\Users\basil\git\CSharp\ProjectBase\ProjectBase\
+
+[C:/Users/basil/git/CSharp/ProjectBase/ProjectBase/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProjectBase.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/basil/git/CSharp/ProjectBase/ProjectBase/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProjectBase.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/basil/git/CSharp/ProjectBase/ProjectBase/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProjectBase.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/basil/git/CSharp/ProjectBase/ProjectBase/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProjectBase.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/basil/git/CSharp/ProjectBase/ProjectBase/View/DetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProjectBase.View.DetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\DetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\DetailsPage.xaml
+
+[C:/Users/basil/git/CSharp/ProjectBase/ProjectBase/View/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProjectBase.View.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\LoginPage.xaml
+
+[C:/Users/basil/git/CSharp/ProjectBase/ProjectBase/View/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProjectBase.View.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\MainPage.xaml
+
+[C:/Users/basil/git/CSharp/ProjectBase/ProjectBase/View/RacePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProjectBase.View.RacePage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\RacePage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\RacePage.xaml
+
+[C:/Users/basil/git/CSharp/ProjectBase/ProjectBase/View/UserPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProjectBase.View.UserPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\UserPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\UserPage.xaml

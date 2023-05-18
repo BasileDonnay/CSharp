@@ -32,6 +32,9 @@ public static class MauiProgram
         builder.Services.AddTransient<CreateUserTables>();
         builder.Services.AddTransient<UserManagementServices>();
 
+        builder.Services.AddTransient<LoginViewModel>();
+        builder.Services.AddTransient<LoginPage>();
+
         builder.Services.AddSingleton<CourseService>();
 
 

@@ -85,14 +85,13 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-
     </Grid>
 
     <ContentPage.MenuBarItems>
         <MenuBarItem Text="Menu" BindingContext="{Binding Path=BindingContext, Source={x:Reference MyPage}}">
             <MenuFlyoutItem Text="Ajouter une course" Command="{Binding GoToDetailsPageCommand}" CommandParameter="Hello Everyone"/>
             <MenuFlyoutItem Text="aller vers la page user" Command="{Binding GoToUserPageCommand}"/>
+            <MenuFlyoutItem Text="aller vers la page Connection" Command="{Binding GoToLoginPageCommand}"/>
         </MenuBarItem>
     </ContentPage.MenuBarItems>
-
 </ContentPage>

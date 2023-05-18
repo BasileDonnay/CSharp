@@ -1,0 +1,1 @@
+C:\Users\basil\git\CSharp\ProjectBase\ProjectBase\ProjectBase.csproj;x64

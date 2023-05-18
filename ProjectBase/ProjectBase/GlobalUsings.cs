@@ -13,4 +13,6 @@ public class Globals
 {
     public static List<CourseModel> MyList = new List<CourseModel>();
     public static DataSet UserSet = new();
+    public static bool isConnected = false;
+    public static bool isAdmin = false;
 }

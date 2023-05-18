@@ -7,17 +7,30 @@
              xmlns:local="clr-namespace:ProjectBase"
              x:Class="ProjectBase.View.UserPage"
              x:Name="MyPage">
+
+    <ContentPage.Resources>
+        <Style x:Key="EntryStyle" TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="Yellow" />
+            <Setter Property="TextColor" Value="black" />
+            <Setter Property="PlaceholderColor" Value="Blue" />
+            <Setter Property="Placeholder" Value="" />
+            <Setter Property="FontFamily" Value="Arial" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="HeightRequest" Value="40" />
+            <Setter Property="Margin" Value="0,10,0,0" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        </Style>
+    </ContentPage.Resources>
     
     <VerticalStackLayout>
-        <Button Text="Fill from Database" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=FillUsersCommand}"
+        <Entry Placeholder="Nom" x:Name="NomEntry" Style="{StaticResource EntryStyle}" />
+        <Entry Placeholder="Mot de Passe" x:Name="MDPEntry" Style="{StaticResource EntryStyle}" />
+        <Entry Placeholder="Administrateur" x:Name="IsAdminEntry" Style="{StaticResource EntryStyle}" />
+
+        <Button Text="Register" Clicked="OnAjouterClicked" IsEnabled="{Binding IsNotBusy}"/>
+        <Button Text="See all users" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=FillUsersCommand}"
                 IsEnabled="{Binding IsNotBusy}"/>
-        <Button Text="Delete from Database" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=DeleteUserCommand}"
-                IsEnabled="{Binding IsNotBusy}"/>
-        <Button Text="Insert from Database" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=InsertUserCommand}"
-                IsEnabled="{Binding IsNotBusy}"/>
-        <Button Text="Update from Database" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=UpdateDBCommand}"
-                IsEnabled="{Binding IsNotBusy}"/>
-        
+
         <CollectionView SelectionMode="None" ItemsSource="{Binding ShownList}">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:User">
