@@ -10,7 +10,7 @@ public class CourseService
 
     public async Task SetUsersJSONfile()
     {
-        string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "CourseServer", "CourseService");
+        string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "QualityServer", "CourseService");
 
 
         using FileStream fileStream = File.Create(filePath);
