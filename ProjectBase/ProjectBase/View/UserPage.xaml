@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:ProjectBase.ViewModel"
+             xmlns:model="clr-namespace:ProjectBase.Model"
+             x:DataType="viewmodel:UserViewModel"
+             xmlns:local="clr-namespace:ProjectBase"
+             x:Class="ProjectBase.View.UserPage"
+             x:Name="MyPage">
+    
+    <VerticalStackLayout>
+        <Button Text="Fill from Database" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=FillUsersCommand}"
+                IsEnabled="{Binding IsNotBusy}"/>
+        <Button Text="Delete from Database" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=DeleteUserCommand}"
+                IsEnabled="{Binding IsNotBusy}"/>
+        <Button Text="Insert from Database" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=InsertUserCommand}"
+                IsEnabled="{Binding IsNotBusy}"/>
+        <Button Text="Update from Database" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=UpdateDBCommand}"
+                IsEnabled="{Binding IsNotBusy}"/>
+        
+        <CollectionView SelectionMode="None" ItemsSource="{Binding ShownList}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:User">
+                    <Border>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding User_ID}" FontSize="Large"/>
+                            <Label Text="{Binding UserName}" FontSize="Large"/>
+                            <Label Text="{Binding UserPassword}" FontSize="Large"/>
+                            <Label Text="{Binding UserAccessType}" FontSize="Large"/>
+                        </StackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

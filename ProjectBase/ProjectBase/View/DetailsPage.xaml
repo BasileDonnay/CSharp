@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjectBase.View.DetailsPage"
              Title="Page de course">
-   
+
     <ContentPage.Resources>
         <Style x:Key="EntryStyle" TargetType="Entry">
             <Setter Property="BackgroundColor" Value="Yellow" />
@@ -34,12 +34,19 @@
         </StackLayout>
 
         <StackLayout>
+            <Entry Placeholder="Localite" x:Name="LocaliteEntry" Style="{StaticResource EntryStyle}" />
+        </StackLayout>
+
+        <StackLayout>
             <Entry Placeholder="Code" x:Name="CodeEntry" Style="{StaticResource EntryStyle}" />
         </StackLayout>
 
         <StackLayout>
-            <Entry Placeholder="Localité" x:Name="LocaliteEntry" Style="{StaticResource EntryStyle}" />
+            <Entry Placeholder="Indice" x:Name="IndiceEntry" Style="{StaticResource EntryStyle}" />
         </StackLayout>
+
+        <!-- Label ajouté pour afficher le numéro de la course -->
+        <Label x:Name="NumCourseLabel" Text="Numéro de la course: 0" FontSize="16" />
 
         <Button Text="Ajouter" Clicked="OnAjouterClicked" Style="{StaticResource ButtonStyle}" />
     </StackLayout>

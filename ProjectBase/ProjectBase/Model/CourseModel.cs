@@ -6,7 +6,11 @@ public class CourseModel
     public string Localite { get; set; }
 
     public string Code { get; set; }
- 
+
+    public string Indice { get; set; }
+
+    public int NumCourse { get; set; }
+
 
 
 }

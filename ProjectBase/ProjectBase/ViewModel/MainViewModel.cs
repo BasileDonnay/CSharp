@@ -25,6 +25,8 @@ public partial class MainViewModel : BaseViewModel
         MyDeviceOrientationService.ConfigureScanner();
         MyDeviceOrientationService.SerialBuffer.Changed += SerialBuffer_Changed;
 
+        CreateUserTables MyUserTables = new();
+
     }
 
 
@@ -59,6 +61,16 @@ public partial class MainViewModel : BaseViewModel
     async Task GoToRacePage(string data)
     {
         await Shell.Current.GoToAsync(nameof(RacePage), true, new Dictionary<string, object>
+        {
+            {"Databc", data }
+            //{"Databc", "salutmonpote" }
+        });
+    }
+
+    [RelayCommand]
+    async Task GoToUserPage(string data)
+    {
+        await Shell.Current.GoToAsync(nameof(UserPage), true, new Dictionary<string, object>
         {
             {"Databc", data }
         });

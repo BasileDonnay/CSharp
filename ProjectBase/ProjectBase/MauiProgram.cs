@@ -27,8 +27,10 @@ public static class MauiProgram
         builder.Services.AddTransient<RaceViewModel>();
         builder.Services.AddTransient<RacePage>();
 
-        
-        
+        builder.Services.AddTransient<UserViewModel>();
+        builder.Services.AddTransient<UserPage>();
+        builder.Services.AddTransient<CreateUserTables>();
+        builder.Services.AddTransient<UserManagementServices>();
 
         builder.Services.AddSingleton<CourseService>();
 

@@ -2,8 +2,8 @@ using System.Text.Json;
 namespace ProjectBase.Services;
 public class CourseService
 {
-    
-   
+
+
     public CourseService()
     { }
 
@@ -23,12 +23,12 @@ public class CourseService
 
     public async Task<List<CourseModel>> GetCourse()
     {
-        List<CourseModel> courses=new();
+        List<CourseModel> courses = new();
 
         using var stream = await FileSystem.OpenAppPackageFileAsync("courses.json");
         using var reader = new StreamReader(stream);
         var contents = await reader.ReadToEndAsync();
-        courses = JsonSerializer.Deserialize<List<CourseModel>>(contents); 
+        courses = JsonSerializer.Deserialize<List<CourseModel>>(contents);
         return courses;
     }
 
