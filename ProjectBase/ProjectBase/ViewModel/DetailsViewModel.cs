@@ -60,6 +60,7 @@ public partial class DetailsViewModel : ObservableObject
 
             // Mettre à jour le label pour afficher le numéro de la course actuel
             //NumCourseLabel.Text = $"Numéro de la course: {currentCourseNumber}";
+            NumCourse = $"Numéro de la course: {currentCourseNumber}";
 
             await Shell.Current.DisplayAlert("Success", "Data saved successfully", "OK");
         }
@@ -67,5 +68,14 @@ public partial class DetailsViewModel : ObservableObject
         {
             await Shell.Current.DisplayAlert("Error", ex.Message, "OK");
         }
-    }	
+    }
+    
+    public string NumCourse { get { return numCourse; } set { if (numCourse != value)
+            {
+                numCourse = value;
+                OnPropertyChanged(nameof(NumCourse));
+            }
+        }
+    }
+    string numCourse = "Numéro de la course: 0";
 }

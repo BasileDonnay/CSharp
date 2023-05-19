@@ -50,7 +50,7 @@
         </StackLayout>
 
         <!-- Label ajouté pour afficher le numéro de la course -->
-        <Label x:Name="NumCourseLabel" Text="Numéro de la course: 0" FontSize="16" />
+        <Label x:Name="NumCourseLabel" Text="{Binding NumCourse}" FontSize="16" />
 
         <Button Text="Ajouter" 
                 Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:DetailsViewModel}}, Path=NewCourseCommand}"/>
