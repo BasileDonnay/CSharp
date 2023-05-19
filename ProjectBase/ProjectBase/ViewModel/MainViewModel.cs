@@ -96,14 +96,14 @@ public partial class MainViewModel : BaseViewModel
 
     }
 
-
-
-
-
     [RelayCommand]
-    async Task GetObject()
+    async Task ShowCourses()
     {
-        if(!Globals.isConnected) return;
+        if (!Globals.isConnected)
+        {
+            await Shell.Current.DisplayAlert("Database", "Not Connected", "OK");
+            return;
+        }
         if (IsBusy) return;
         CourseService MyService = new();
 

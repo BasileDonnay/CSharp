@@ -12,7 +12,12 @@ namespace ProjectBase.ViewModel;
 
 public partial class UserViewModel: BaseViewModel
 {
+    [ObservableProperty]
+    string nomEntry;
+    [ObservableProperty]
+    string mDPEntry;
     UserManagementServices MyDBService;
+    List<User> MyUserList = new List<User>();
     public UserViewModel(UserManagementServices myDBService)
     {
         MyDBService = myDBService;
@@ -37,23 +42,23 @@ public partial class UserViewModel: BaseViewModel
             }
             await MyDBService.FillUsersFromDB();
 
-            List<User> MyList = new List<User>();
+           
             try
             {
-                MyList = Globals.UserSet.Tables["Users"].AsEnumerable().Select(m => new User()
+                MyUserList = Globals.UserSet.Tables["Users"].AsEnumerable().Select(m => new User()
                 {
                     User_ID = m.Field<Int16>("User_ID"),
                     UserName = m.Field<string>("UserName"),
                     UserPassword = m.Field<string>("UserPassword"),
                     UserAccessType = m.Field<Int16>("UserAccessType"),
-            }).ToList();
+                }).ToList();
             } catch (Exception ex)
             {
                 await Shell.Current.DisplayAlert("Database", ex.Message, "OK");
             }
 
             ShownList.Clear();
-            foreach(var item in MyList)
+            foreach(var item in MyUserList)
             {
                 ShownList.Add(item);
             }
@@ -66,13 +71,55 @@ public partial class UserViewModel: BaseViewModel
         }
     }
 
-    public async Task InsertUser(string name, string password, string admin)
+    [RelayCommand]
+    public async Task InsertUser()
     {
         IsBusy = true;
         try
         {
-            int intAdmin = Int32.Parse(admin);
-            await MyDBService.InsertIntoDB(name, password, intAdmin);
+            await MyDBService.InsertIntoDB(NomEntry, MDPEntry, 2);
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("Database", ex.Message, "OK");
+        }
+        IsBusy = false;
+    }
+
+    [RelayCommand]
+    public async Task MakeAdministrator(string name)
+    {
+        IsBusy = true;
+        string pass = "";
+
+
+        foreach(var user in MyUserList)
+        {
+            if(user.UserName == name)
+            {
+                pass = user.UserPassword;
+            }
+        }
+        try
+        {
+            await MyDBService.DeleteIntoDB(name);
+            await MyDBService.InsertIntoDB(name, pass, 1);
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("Database", ex.Message, "OK");
+        }
+        IsBusy = false;
+    }
+
+    [RelayCommand]
+    public async Task DeleteUser(string name)
+    {
+        IsBusy = true;
+        try
+        {
+            await MyDBService.DeleteIntoDB(name);
+            FillUsers();
         }
         catch (Exception ex)
         {

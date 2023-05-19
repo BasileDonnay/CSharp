@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:ProjectBase.ViewModel"
+             xmlns:model="clr-namespace:ProjectBase.Model"
+             x:DataType="viewmodel:DetailsViewModel"
+             xmlns:local="clr-namespace:ProjectBase"
              x:Class="ProjectBase.View.DetailsPage"
              Title="Page de course">
 
@@ -30,24 +34,25 @@
         <Label Text="Ajouter une course" FontSize="Title" />
 
         <StackLayout>
-            <Entry Placeholder="Nom" x:Name="NomEntry" Style="{StaticResource EntryStyle}" />
+            <Entry Placeholder="Nom" x:Name="NomEntry" Style="{StaticResource EntryStyle}" Text="{Binding NomEntry}"/>
         </StackLayout>
 
         <StackLayout>
-            <Entry Placeholder="Localite" x:Name="LocaliteEntry" Style="{StaticResource EntryStyle}" />
+            <Entry Placeholder="Localite" x:Name="LocaliteEntry" Style="{StaticResource EntryStyle}" Text="{Binding LocaliteEntry}"/>
         </StackLayout>
 
         <StackLayout>
-            <Entry Placeholder="Code" x:Name="CodeEntry" Style="{StaticResource EntryStyle}" />
+            <Entry Placeholder="Code" x:Name="CodeEntry" Style="{StaticResource EntryStyle}" Text="{Binding CodeEntry}"/>
         </StackLayout>
 
         <StackLayout>
-            <Entry Placeholder="Indice" x:Name="IndiceEntry" Style="{StaticResource EntryStyle}" />
+            <Entry Placeholder="Indice" x:Name="IndiceEntry" Style="{StaticResource EntryStyle}" Text="{Binding IndiceEntry}"/>
         </StackLayout>
 
         <!-- Label ajouté pour afficher le numéro de la course -->
         <Label x:Name="NumCourseLabel" Text="Numéro de la course: 0" FontSize="16" />
 
-        <Button Text="Ajouter" Clicked="OnAjouterClicked" Style="{StaticResource ButtonStyle}" />
+        <Button Text="Ajouter" 
+                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:DetailsViewModel}}, Path=NewCourseCommand}"/>
     </StackLayout>
 </ContentPage>

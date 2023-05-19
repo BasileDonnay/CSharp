@@ -23,12 +23,14 @@
     </ContentPage.Resources>
     
     <VerticalStackLayout>
-        <Entry Placeholder="Nom" x:Name="NomEntry" Style="{StaticResource EntryStyle}" />
-        <Entry Placeholder="Mot de Passe" x:Name="MDPEntry" Style="{StaticResource EntryStyle}" />
-        <Entry Placeholder="Administrateur" x:Name="IsAdminEntry" Style="{StaticResource EntryStyle}" />
+        <Entry Placeholder="Nom" x:Name="NomEntry" Style="{StaticResource EntryStyle}" Text="{Binding NomEntry}"/>
+        <Entry Placeholder="Mot de Passe" x:Name="MDPEntry" Style="{StaticResource EntryStyle}" Text="{Binding MDPEntry}"/>
 
-        <Button Text="Register" Clicked="OnAjouterClicked" IsEnabled="{Binding IsNotBusy}"/>
-        <Button Text="See all users" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=FillUsersCommand}"
+        <Button Text="Register" 
+                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=InsertUserCommand}" 
+                IsEnabled="{Binding IsNotBusy}"/>
+        <Button Text="See all users" 
+                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=FillUsersCommand}"
                 IsEnabled="{Binding IsNotBusy}"/>
 
         <CollectionView SelectionMode="None" ItemsSource="{Binding ShownList}">
@@ -36,10 +38,29 @@
                 <DataTemplate x:DataType="model:User">
                     <Border>
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="{Binding User_ID}" FontSize="Large"/>
                             <Label Text="{Binding UserName}" FontSize="Large"/>
-                            <Label Text="{Binding UserPassword}" FontSize="Large"/>
-                            <Label Text="{Binding UserAccessType}" FontSize="Large"/>
+                            <Button 
+                                Text="Make Admin"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=MakeAdministratorCommand}"
+                                CommandParameter="{Binding UserName}"
+                                HeightRequest="60" 
+                                WidthRequest="150"
+                                HorizontalOptions="Start"
+                                BackgroundColor="#51f542"
+                                TextColor="White"
+                                CornerRadius="20">
+                            </Button>
+                            <Button 
+                                Text="Delete User"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=DeleteUserCommand}"
+                                CommandParameter="{Binding UserName}"
+                                HeightRequest="60" 
+                                WidthRequest="150"
+                                HorizontalOptions="Start"
+                                BackgroundColor="#ff000d"
+                                TextColor="White"
+                                CornerRadius="20">
+                            </Button>
                         </StackLayout>
                     </Border>
                 </DataTemplate>
