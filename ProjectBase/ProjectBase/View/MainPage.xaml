@@ -12,10 +12,10 @@
             <Style TargetType="Label">
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="TextColor" Value="DarkSlateGray"/>
-                <Setter Property="Margin" Value="0,5"/>
+                <Setter Property="Margin" Value="5"/>
             </Style>
             <Style TargetType="Frame">
-                <Setter Property="BackgroundColor" Value="WhiteSmoke"/>
+                <Setter Property="BackgroundColor" Value="#162B4D"/>
                 <Setter Property="Padding" Value="10"/>
                 <Setter Property="Margin" Value="0,10"/>
                 <Setter Property="CornerRadius" Value="10"/>
@@ -23,69 +23,71 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <Grid Padding="10" RowDefinitions="Auto,Auto,*" ColumnDefinitions="*,*" BackgroundColor="LightSteelBlue">
-        <Label Text="Orientation Game" FontSize="Large" FontAttributes="Bold" TextColor="DarkSlateGray" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center"/>
+    <Grid Padding="10" RowDefinitions="Auto,Auto,*" ColumnDefinitions="*,*" BackgroundColor="#F3F3F3">
+        <Frame BackgroundColor="#162B4D" Padding="10" Margin="0,0,0,10" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+            <Label Text="Orientation Game" FontSize="24" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </Frame>
 
         <Button 
             Text="Afficher Courses"
             Command="{Binding ShowCoursesCommand}"
             Grid.Row="1"
             Grid.Column="0" 
-            HeightRequest="60" 
-            WidthRequest="150"
+            HeightRequest="40" 
+            WidthRequest="160"
             HorizontalOptions="Start"
-            BackgroundColor="#2E86C1"
+            BackgroundColor="#4A90E2"
             TextColor="White"
             CornerRadius="20">
-        </Button>
-
-        <Button 
-            Text="Sauvegarder"
-            Command="{Binding SetUsersJSONfileCommand}"
-            Grid.Row="1"
-            Grid.Column="1" 
-            HeightRequest="60" 
-            WidthRequest="150"
-            HorizontalOptions="Start"
-            BackgroundColor="#2E86C1"
-            TextColor="White"
-            CornerRadius="20">
+            <Button.FontSize>
+                <OnPlatform x:TypeArguments="x:Double">
+                    <On Platform="Android" Value="14"/>
+                    <On Platform="iOS" Value="16"/>
+                </OnPlatform>
+            </Button.FontSize>
         </Button>
 
         <CollectionView Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" SelectionMode="None" ItemsSource="{Binding MyShownList}">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:CourseModel">
-                    <Frame>
-                        <StackLayout Orientation="Vertical">
-
-                            <Label Text="{Binding Nom}" FontSize="Large"/>
-                            <Label Text="{Binding Localite}" FontSize="Large"/>
-                            <Label Text="{Binding Code}" FontSize="Large"/>
-                            <Label Text="{Binding NumCourse}" FontSize="Large"/>
-                            <Label Text="Indices:" FontSize="Medium"/>
+                    <Frame Margin="0,0,0,10">
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding Nom}" FontSize="18" FontAttributes="Bold" TextColor="DarkSlateGray"/>
+                            <Label Text="{Binding Localite}" FontSize="16" TextColor="Gray"/>
+                            <Label Text="{Binding Code}" FontSize="16" TextColor="Gray"/>
+                            <Label Text="{Binding NumCourse}" FontSize="16" TextColor="Gray"/>
+                            <Label Text="Indices:" FontSize="16" TextColor="Gray" Margin="0,10,0,5"/>
 
                             <Button Text="Course"
                                     Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToRacePageCommand}"
                                     CommandParameter="{Binding Code}"
-                                    HeightRequest="60" 
-                                    WidthRequest="150"
+                                    HeightRequest="40" 
+                                    WidthRequest="160"
                                     HorizontalOptions="Start"
-                                    BackgroundColor="#2E86C1"
+                                    BackgroundColor="#4A90E2"
                                     TextColor="White"
                                     CornerRadius="20">
+                                <Button.FontSize>
+                                    <OnPlatform x:TypeArguments="x:Double">
+                                        <On Platform="Android" Value="14"/>
+                                        <On Platform="iOS" Value="16"/>
+                                    </OnPlatform>
+                                </Button.FontSize>
                             </Button>
                         </StackLayout>
                     </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+
+        <Label Text="2.0" FontSize="12" TextColor="Gray" Grid.Row="2" Grid.Column="1" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,5,5"/>
     </Grid>
 
     <ContentPage.MenuBarItems>
         <MenuBarItem Text="Menu" BindingContext="{Binding Path=BindingContext, Source={x:Reference MyPage}}">
             <MenuFlyoutItem Text="Ajouter une course" Command="{Binding GoToDetailsPageCommand}" CommandParameter="Hello Everyone"/>
-            <MenuFlyoutItem Text="aller vers la page user" Command="{Binding GoToUserPageCommand}"/>
-            <MenuFlyoutItem Text="aller vers la page Connection" Command="{Binding GoToLoginPageCommand}"/>
+            <MenuFlyoutItem Text="Aller vers la page user" Command="{Binding GoToUserPageCommand}"/>
+            <MenuFlyoutItem Text="Aller vers la page Connection" Command="{Binding GoToLoginPageCommand}"/>
         </MenuBarItem>
     </ContentPage.MenuBarItems>
 </ContentPage>
