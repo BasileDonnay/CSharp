@@ -57,28 +57,22 @@
                 <DataTemplate x:DataType="model:CourseModel">
                     <Frame>
                         <StackLayout Orientation="Vertical">
+
                             <Label Text="{Binding Nom}" FontSize="Large"/>
                             <Label Text="{Binding Localite}" FontSize="Large"/>
                             <Label Text="{Binding Code}" FontSize="Large"/>
                             <Label Text="{Binding NumCourse}" FontSize="Large"/>
                             <Label Text="Indices:" FontSize="Medium"/>
-                            <CollectionView ItemsSource="{Binding Indices}">
-                                <CollectionView.ItemTemplate>
-                                    <DataTemplate>
 
-
-                                    </DataTemplate>
-                                </CollectionView.ItemTemplate>
-                            </CollectionView>
-                            <Button 
-                                Text="Course"
-                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToRacePageCommand}"
-                                HeightRequest="60" 
-                                WidthRequest="150"
-                                HorizontalOptions="Start"
-                                BackgroundColor="#2E86C1"
-                                TextColor="White"
-                                CornerRadius="20">
+                            <Button Text="Course"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToRacePageCommand}"
+                                    CommandParameter="{Binding Code}"
+                                    HeightRequest="60" 
+                                    WidthRequest="150"
+                                    HorizontalOptions="Start"
+                                    BackgroundColor="#2E86C1"
+                                    TextColor="White"
+                                    CornerRadius="20">
                             </Button>
                         </StackLayout>
                     </Frame>

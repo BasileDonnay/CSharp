@@ -2,15 +2,40 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjectBase.View.RacePage"
-             Title="RacePage">
-    <VerticalStackLayout>
+             Title="RacePage"
+             xmlns:viewModels="clr-namespace:ProjectBase.ViewModel">
+
+    <ContentPage.BindingContext>
+        <viewModels:RaceViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+
+
+        <!-- Course Detail -->
+        <Label Text="Course Details:"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
         <Label 
-            Text="{Binding Chronometre}"
-            VerticalOptions="Center" 
+            Text="{Binding CourseName}"
             HorizontalOptions="Center" />
+
         <Label 
-            Text="{Binding MonTxt}"
-            VerticalOptions="Center" 
+            Text="{Binding CourseLocalite}"
             HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+        <Label 
+            Text="{Binding CourseIndices}"
+            HorizontalOptions="Center">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Indices: " FontAttributes="Bold" />
+                    <Span Text="{Binding CourseIndicesAsString}" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Label Text="{Binding CourseDetail.Code}"
+               HorizontalOptions="Center" />
+    </StackLayout>
 </ContentPage>

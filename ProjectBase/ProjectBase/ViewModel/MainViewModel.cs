@@ -54,16 +54,16 @@ public partial class MainViewModel : BaseViewModel
             {"Databc", data }
         });
     }
-   
+
 
     [RelayCommand]
-    async Task GoToRacePage(string data)
+    async Task GoToRacePage(string courseCode)
     {
         await Shell.Current.GoToAsync(nameof(RacePage), true, new Dictionary<string, object>
         {
-            {"Databc", data }
-            //{"Databc", "salutmonpote" }
+            {"MyCourseCode", courseCode }
         });
+
     }
 
     [RelayCommand]
