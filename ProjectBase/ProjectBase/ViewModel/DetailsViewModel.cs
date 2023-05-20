@@ -29,7 +29,7 @@ public partial class DetailsViewModel : ObservableObject
         CourseModel nouvelleCourse = new CourseModel()
         {
             Nom = nom,
-            Code = code,
+            Code = currentCourseNumber.ToString(),
             Localite = localite,
             NumCourse = currentCourseNumber
         };

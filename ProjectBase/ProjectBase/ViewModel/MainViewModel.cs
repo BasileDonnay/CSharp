@@ -63,6 +63,8 @@ public partial class MainViewModel : BaseViewModel
         {
             {"MyCourseCode", courseCode }
         });
+       
+        
 
     }
 

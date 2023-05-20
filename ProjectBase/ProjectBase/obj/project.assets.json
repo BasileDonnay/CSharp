@@ -31856,11 +31856,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bureau\\CSharp-main\\ProjectBase\\ProjectBase\\ProjectBase.csproj",
+      "projectUniqueName": "C:\\Users\\sowmi\\Coding\\ProjectGitHub\\CSharp\\ProjectBase\\ProjectBase\\ProjectBase.csproj",
       "projectName": "ProjectBase",
-      "projectPath": "D:\\Bureau\\CSharp-main\\ProjectBase\\ProjectBase\\ProjectBase.csproj",
+      "projectPath": "C:\\Users\\sowmi\\Coding\\ProjectGitHub\\CSharp\\ProjectBase\\ProjectBase\\ProjectBase.csproj",
       "packagesPath": "C:\\Users\\sowmi\\.nuget\\packages\\",
-      "outputPath": "D:\\Bureau\\CSharp-main\\ProjectBase\\ProjectBase\\obj\\",
+      "outputPath": "C:\\Users\\sowmi\\Coding\\ProjectGitHub\\CSharp\\ProjectBase\\ProjectBase\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

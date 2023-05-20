@@ -1,41 +1,77 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjectBase.View.RacePage"
              Title="RacePage"
+             BackgroundColor="#e6f7ff"
              xmlns:viewModels="clr-namespace:ProjectBase.ViewModel">
 
     <ContentPage.BindingContext>
         <viewModels:RaceViewModel />
     </ContentPage.BindingContext>
 
-    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="DarkBlue" />
+            <Setter Property="FontFamily" Value="Arial" />
+            <Setter Property="FontSize" Value="18" />
+        </Style>
+    </ContentPage.Resources>
 
+    <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Spacing="20">
 
         <!-- Course Detail -->
-        <Label Text="Course Details:"
+        <Label Text="Détail de la course"
                FontAttributes="Bold"
-               HorizontalOptions="Center" />
-        <Label 
-            Text="{Binding CourseName}"
-            HorizontalOptions="Center" />
+               HorizontalOptions="Center"
+               FontSize="30"
+               TextColor="Maroon" />
 
-        <Label 
-            Text="{Binding CourseLocalite}"
-            HorizontalOptions="Center" />
-
-        <Label 
-            Text="{Binding CourseIndices}"
-            HorizontalOptions="Center">
+        <Label Text="{Binding Chronometre}"
+               HorizontalOptions="Center"
+               FontSize="24"
+               TextColor="Black">
             <Label.FormattedText>
                 <FormattedString>
-                    <Span Text="Indices: " FontAttributes="Bold" />
-                    <Span Text="{Binding CourseIndicesAsString}" />
+                    <Span Text="Temps: " FontAttributes="Bold" TextColor="Black" />
+                    <Span Text="{Binding Chronometre}" />
                 </FormattedString>
             </Label.FormattedText>
         </Label>
 
-        <Label Text="{Binding CourseDetail.Code}"
-               HorizontalOptions="Center" />
+        <Label Text="{Binding CourseName}"
+               HorizontalOptions="Center"
+               FontAttributes="Bold">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Nom de la course: " FontAttributes="Bold" />
+                    <Span Text="{Binding CourseName}" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Label Text="{Binding CourseLocalite}"
+               HorizontalOptions="Center"
+               FontAttributes="Italic"
+               TextColor="Green">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Localité: " FontAttributes="Bold" />
+                    <Span Text="{Binding CourseLocalite}" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Label Text="{Binding CourseIndices}"
+               HorizontalOptions="Center"
+               TextColor="Purple">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Indices: " FontAttributes="Bold" TextColor="Black" />
+                    <Span Text="{Binding CourseIndicesAsString}" TextColor="Purple" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
     </StackLayout>
 </ContentPage>

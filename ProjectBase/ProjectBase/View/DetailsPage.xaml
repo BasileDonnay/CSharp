@@ -41,9 +41,6 @@
             <Entry Placeholder="Localite" x:Name="LocaliteEntry" Style="{StaticResource EntryStyle}" Text="{Binding LocaliteEntry}"/>
         </StackLayout>
 
-        <StackLayout>
-            <Entry Placeholder="Code" x:Name="CodeEntry" Style="{StaticResource EntryStyle}" Text="{Binding CodeEntry}"/>
-        </StackLayout>
 
         <StackLayout>
             <Entry Placeholder="Indice" x:Name="IndiceEntry" Style="{StaticResource EntryStyle}" Text="{Binding IndiceEntry}"/>
