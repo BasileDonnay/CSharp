@@ -28,37 +28,17 @@
             <Label Text="Orientation Game" FontSize="24" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
         </Frame>
 
-        <Button 
-            Text="Afficher Courses"
-            Command="{Binding ShowCoursesCommand}"
-            Grid.Row="1"
-            Grid.Column="0" 
-            HeightRequest="40" 
-            WidthRequest="160"
-            HorizontalOptions="Start"
-            BackgroundColor="#4A90E2"
-            TextColor="White"
-            CornerRadius="20">
-            <Button.FontSize>
-                <OnPlatform x:TypeArguments="x:Double">
-                    <On Platform="Android" Value="14"/>
-                    <On Platform="iOS" Value="16"/>
-                </OnPlatform>
-            </Button.FontSize>
-        </Button>
-
         <CollectionView Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" SelectionMode="None" ItemsSource="{Binding MyShownList}">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:CourseModel">
                     <Frame Margin="0,0,0,10">
                         <StackLayout Padding="10">
-                            <Label Text="{Binding Nom}" FontSize="18" FontAttributes="Bold" TextColor="DarkSlateGray"/>
-                            <Label Text="{Binding Localite}" FontSize="16" TextColor="Gray"/>
-                            <Label Text="{Binding Code}" FontSize="16" TextColor="Gray"/>
-                            <Label Text="{Binding NumCourse}" FontSize="16" TextColor="Gray"/>
-                            <Label Text="Indices:" FontSize="16" TextColor="Gray" Margin="0,10,0,5"/>
+                            <Label Text="{Binding Nom}" FontSize="18" FontAttributes="Bold" TextColor="White"/>
 
-                            <Button Text="Course"
+
+
+
+                            <Button Text="Detail"
                                     Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToRacePageCommand}"
                                     CommandParameter="{Binding Code}"
                                     HeightRequest="40" 
