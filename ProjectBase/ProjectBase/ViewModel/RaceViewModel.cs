@@ -71,11 +71,11 @@ namespace ProjectBase.ViewModel
 
             foreach (var data in Globals.MyList)
             {
-                // Le .Code c'est un attribut du course model, si c'est == alors je l'ajoute dans ma liste que je vais afficher dans les details de la course
+                // Le .Code c'est un attribut du course model, si c'est == alors je l'ajoute dans ma variable 
                 if (codeQr == data.Code)
-
+                    // variable que j'ai vais afficher 
                     CourseIndiceName = string.Join(", ", data.Indices.Select(indice => indice.Name));
-                // MonCode = codeQr;
+               
             }
         }
 
