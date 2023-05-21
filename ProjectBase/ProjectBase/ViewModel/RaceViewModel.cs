@@ -30,6 +30,10 @@ namespace ProjectBase.ViewModel
         [ObservableProperty]
         List<string> courseIndices;
 
+        [ObservableProperty]
+        int scanTime;
+
+
         private string courseIndicesAsString;
       
         public string CourseIndicesAsString
@@ -75,7 +79,9 @@ namespace ProjectBase.ViewModel
                 if (codeQr == data.Code)
                     // variable que j'ai vais afficher 
                     CourseIndiceName = string.Join(", ", data.Indices.Select(indice => indice.Name));
-               
+                // Capture le temps actuel lors du scan
+                ScanTime = Chronometre;
+
             }
         }
 

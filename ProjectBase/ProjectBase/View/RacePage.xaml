@@ -84,6 +84,18 @@
             </Label.FormattedText>
         </Label>
 
+        <Label Text="{Binding ScanTime}"
+       HorizontalOptions="Center"
+       FontSize="24"
+       TextColor="Black">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Temps de scan : " FontAttributes="Bold" TextColor="Black" />
+                    <Span Text="{Binding ScanTime}" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
 
     </StackLayout>
 </ContentPage>
