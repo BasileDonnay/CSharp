@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using Microsoft.Maui.Controls;
-using ProjectBase.Services;
+
 
 namespace ProjectBase.ViewModel
 {
@@ -30,10 +25,13 @@ namespace ProjectBase.ViewModel
         string courseLocalite;
 
         [ObservableProperty]
+        string courseIndiceName;
+
+        [ObservableProperty]
         List<string> courseIndices;
 
         private string courseIndicesAsString;
-
+      
         public string CourseIndicesAsString
         {
             get => courseIndicesAsString;
@@ -47,7 +45,7 @@ namespace ProjectBase.ViewModel
             timer.Tick += (s, e) => UpdateTimer();
             timer.Start();
 
-            /*
+         
             this.MyDeviceOrientationService = new DeviceOrientationServices();
             try
             {
@@ -59,15 +57,13 @@ namespace ProjectBase.ViewModel
             catch (Exception)
             {
                 // Si l'ouverture du port COM échoue, simuler un scan de code QR
-                SimulateQRScan("70");
+              
             }
-            */
+        
         }
 
-        /*
         private void SerialBuffer_Changed(object sender, EventArgs e)
         {
-            Console.WriteLine("salut");
             DeviceOrientationServices.QueueBuffer myQueue = (DeviceOrientationServices.QueueBuffer)sender;
 
             // ID c'est le code QR que l'on va scanner
@@ -75,31 +71,15 @@ namespace ProjectBase.ViewModel
 
             foreach (var data in Globals.MyList)
             {
-                // Le .Code c'est un attribut du course model, si c'est == alors je l'ajoute dans ma liste
+                // Le .Code c'est un attribut du course model, si c'est == alors je l'ajoute dans ma liste que je vais afficher dans les details de la course
                 if (codeQr == data.Code)
-                {
-                   
-                }
+
+                    CourseIndiceName = string.Join(", ", data.Indices.Select(indice => indice.Name));
+                // MonCode = codeQr;
             }
         }
-        */
 
-        /*
-        [RelayCommand]
-        public async Task SimulateQRScanCommand()
-        {
-            SimulateQRScan("70");
-        }
 
-        public void SimulateQRScan(string qrCode)
-        {
-            // Ajoutez le code QR à la file d'attente
-            MyDeviceOrientationService.SerialBuffer.Enqueue(qrCode);
-
-            // Déclenchez manuellement l'événement pour traiter le code QR
-            SerialBuffer_Changed(MyDeviceOrientationService.SerialBuffer, EventArgs.Empty);
-        }
-        */
 
         partial void OnMaCourseChanged(string? value)
         {

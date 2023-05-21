@@ -72,18 +72,17 @@
                 </FormattedString>
             </Label.FormattedText>
         </Label>
-        <Button 
-    Text="Simulate Scan"
-    Command="{Binding SimulateQRScanCommand}"
-    Grid.Row="1"
-    Grid.Column="1" 
-    HeightRequest="60" 
-    WidthRequest="150"
-    HorizontalOptions="Start"
-    BackgroundColor="#2E86C1"
-    TextColor="White"
-    CornerRadius="20">
-        </Button>
+
+        <Label Text="{Binding CourseIndiceName}"
+       HorizontalOptions="Center"
+       TextColor="Purple">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Indices suivant : " FontAttributes="Bold" TextColor="Black" />
+                    <Span Text="{Binding CourseIndiceName}" TextColor="Purple" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
 
 
     </StackLayout>

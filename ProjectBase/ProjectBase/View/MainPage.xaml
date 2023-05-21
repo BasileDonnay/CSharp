@@ -27,6 +27,20 @@
         <Frame BackgroundColor="#162B4D" Padding="10" Margin="0,0,0,10" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
             <Label Text="Orientation Game" FontSize="24" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
         </Frame>
+        
+        <Button 
+            Text="Afficher Courses"
+            Command="{Binding ShowCoursesCommand}"
+            Grid.Row="1"
+            Grid.Column="0" 
+            HeightRequest="60" 
+            WidthRequest="150"
+            HorizontalOptions="Start"
+            BackgroundColor="#2E86C1"
+            TextColor="White"
+            CornerRadius="20">
+        </Button>
+
 
         <CollectionView Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" SelectionMode="None" ItemsSource="{Binding MyShownList}">
             <CollectionView.ItemTemplate>

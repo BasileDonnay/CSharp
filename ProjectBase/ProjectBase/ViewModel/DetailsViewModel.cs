@@ -1,3 +1,4 @@
+
 namespace ProjectBase.ViewModel;
 
 public partial class DetailsViewModel : ObservableObject
