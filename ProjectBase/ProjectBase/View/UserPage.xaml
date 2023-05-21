@@ -26,10 +26,10 @@
         <Entry Placeholder="Nom" x:Name="NomEntry" Style="{StaticResource EntryStyle}" Text="{Binding NomEntry}"/>
         <Entry Placeholder="Mot de Passe" x:Name="MDPEntry" Style="{StaticResource EntryStyle}" Text="{Binding MDPEntry}"/>
 
-        <Button Text="Register" 
+        <Button Text="S'inscrire" 
                 Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=InsertUserCommand}" 
                 IsEnabled="{Binding IsNotBusy}"/>
-        <Button Text="See all users" 
+        <Button Text="Voir tous les users" 
                 Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=FillUsersCommand}"
                 IsEnabled="{Binding IsNotBusy}"/>
 

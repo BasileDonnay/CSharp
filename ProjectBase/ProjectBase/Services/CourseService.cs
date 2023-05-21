@@ -10,7 +10,7 @@ public class CourseService
 
     public async Task SetUsersJSONfile()
     {
-        string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "QualityServer", "CourseService");
+        string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "QualityServer", "CourseService.json");
 
 
         using FileStream fileStream = File.Create(filePath);
@@ -23,13 +23,17 @@ public class CourseService
 
     public async Task<List<CourseModel>> GetCourse()
     {
-        List<CourseModel> courses = new();
+        string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "QualityServer", "CourseService.json");
+        List<CourseModel> courses = null;
 
-        using var stream = await FileSystem.OpenAppPackageFileAsync("courses.json");
-        using var reader = new StreamReader(stream);
-        var contents = await reader.ReadToEndAsync();
-        courses = JsonSerializer.Deserialize<List<CourseModel>>(contents);
-        return courses;
+        if (File.Exists(filePath))
+        {
+            string json = await File.ReadAllTextAsync(filePath);
+            courses = JsonSerializer.Deserialize<List<CourseModel>>(json);
+        }
+
+        return courses ?? new List<CourseModel>();
     }
+
 
 }

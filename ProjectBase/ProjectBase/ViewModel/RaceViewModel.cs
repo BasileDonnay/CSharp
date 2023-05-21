@@ -34,6 +34,8 @@ namespace ProjectBase.ViewModel
         int scanTime;
 
 
+
+
         private string courseIndicesAsString;
       
         public string CourseIndicesAsString

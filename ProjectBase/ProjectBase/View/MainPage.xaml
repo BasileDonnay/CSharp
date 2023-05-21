@@ -27,7 +27,7 @@
         <Frame BackgroundColor="#162B4D" Padding="10" Margin="0,0,0,10" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
             <Label Text="Orientation Game" FontSize="24" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
         </Frame>
-        
+
         <Button 
             Text="Afficher Courses"
             Command="{Binding ShowCoursesCommand}"
@@ -80,7 +80,7 @@
     <ContentPage.MenuBarItems>
         <MenuBarItem Text="Menu" BindingContext="{Binding Path=BindingContext, Source={x:Reference MyPage}}">
             <MenuFlyoutItem Text="Ajouter une course" Command="{Binding GoToDetailsPageCommand}" CommandParameter="Hello Everyone"/>
-            <MenuFlyoutItem Text="Aller vers la page user" Command="{Binding GoToUserPageCommand}"/>
+            <MenuFlyoutItem Text="Aller vers la page Inscription" Command="{Binding GoToUserPageCommand}"/>
             <MenuFlyoutItem Text="Aller vers la page Connection" Command="{Binding GoToLoginPageCommand}"/>
         </MenuBarItem>
     </ContentPage.MenuBarItems>
