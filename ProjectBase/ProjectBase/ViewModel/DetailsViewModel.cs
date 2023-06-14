@@ -21,6 +21,9 @@ public partial class DetailsViewModel : ObservableObject
         myService = new CourseService();
     }
 
+    // la c'est la methode pour ajouter une nouvelle course
+    // pas besoinde prendre les numeros de courses et les indices 
+
     [RelayCommand]
     private async void NewCourse()
     {

@@ -71,6 +71,7 @@ public partial class UserViewModel: BaseViewModel
         }
     }
 
+    // methode pour s'inscire et donc add un nouvel user
     [RelayCommand]
     public async Task InsertUser()
     {

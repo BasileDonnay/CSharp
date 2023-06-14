@@ -10,6 +10,7 @@ public partial class UserManagementServices
 {}
 public class CreateUserTables
 {
+    // creation des tables se passe ici 
     public CreateUserTables()
     {
         DataTable UserTable = new DataTable();

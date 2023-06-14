@@ -7,7 +7,7 @@ public class CourseService
     public CourseService()
     { }
 
-
+ // methode pour ecrire dans le fichier Json
     public async Task SetUsersJSONfile()
     {
         string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "QualityServer", "CourseService.json");
@@ -20,7 +20,7 @@ public class CourseService
 
     }
 
-
+    // methode pour afficher les infos du fichier Json
     public async Task<List<CourseModel>> GetCourse()
     {
         string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "QualityServer", "CourseService.json");

@@ -4,12 +4,14 @@ namespace ProjectBase.ViewModel
 {
     // Décorateurs de propriétés pour la liaison de requête
     [QueryProperty(nameof(MonTxt), "Databc")]
+
+    // variable que j'ai importer de ma methode GoToRacePage de ma mainViewModel
     [QueryProperty(nameof(MaCourse), "MyCourseCode")]
     public partial class RaceViewModel : ObservableObject
     {
         DeviceOrientationServices MyDeviceOrientationService;
 
-        // Propriétés observables
+        // Varibake que je déclare qui vont me servir pour que je puisse y mettre mes valeurs a afficher 
         [ObservableProperty]
         int chronometre = 0;
         [ObservableProperty]
@@ -88,7 +90,10 @@ namespace ProjectBase.ViewModel
         }
 
 
-
+        // cette methode va etre appeler quand je vais cliquer sur une course et que le code de cette course va 
+        // correspondre avec le code d'une de mes course présente dans ma liste de course
+        // elle va mettre les valeurs de ma course dans mes variables Observable
+        // puis les afficher avec mon Xaml
         partial void OnMaCourseChanged(string? value)
         {
             foreach (var course in Globals.MyList)

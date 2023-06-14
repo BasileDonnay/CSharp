@@ -99,6 +99,7 @@ namespace ProjectBase.ViewModel
             }
         }
 
+        // methode pour afficher les courses
         [RelayCommand]
         async Task ShowCourses()
         {
