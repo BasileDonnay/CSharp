@@ -1,0 +1,46 @@
+﻿Ajouter une page
+-        View > nouvelle élément > MAUI > content page xaml > copier le content page racePage sur celle-ci et remplacer par le nom de la page même   
+-        ViewModel > nouvelle element > classe c# 
+  
+
+-        MAUIProgramme > ajouter la page et le model 
+  
+
+-        AppShell.xaml.cs > ajouter le router de la page
+  
+
+** Bien vérifier le xaml , xaml.cs et le ViewModel , que tout sois pareil au autre fichier
+Modèle
+* Model > cree un nvx modèl en se basant sur courseModel 
+Représentation
+* Copier la CollectionView de MainPage.xaml
+Ajout objet
+        DetailsViewModel.cs tu crée un nouvel Modèle
+  
+
+Puis tu l’ajoute dans la liste globale pour l’affichage
+  
+
+Puis tu vas dans Service > CourseService pour la sauvegarde dans le JSON.
+  
+
+
+
+Nouvelle bd
+Il y a des boutons dans la userPage qui appellent des méthodes dans UserViewModel via RelayCommand. Ces méthodes appellent des méthodes dans Platform > Windows UserManagmentService. Puis Services > UserManagmentService > CopierColler toute la page 
+Comptes utilisateurs
+Global Using > Définir ( IsConnected = false ) Et ( isAdmin = false )  Ainsi Que le UserSet
+  
+
+Quand on appel une methode du mainViewModel on peux verifier si on est admin ou connecter 
+  
+
+
+
+Amélioration : 
+- La page de Login doit se trouver en premier plan
+- myService.SetUsersJSONfile(); appelé sans "await"
+- "await viewModel.LoginUser(nom, mdp);"  => A utiliser en "RelayCommand"
+- "Frame" à remplacer par "Border"
+- ObservableProperty manipulé avec minuscule.. (NewCourse)
+- SetUsersJSONfile => Manipulation de fichiers sans try/catch
